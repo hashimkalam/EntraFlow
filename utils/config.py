@@ -1,4 +1,4 @@
-"""Configuration management for the AI Agent Orchestration System."""
+"""Configuration management for EntraFlow."""
 
 import os
 import yaml

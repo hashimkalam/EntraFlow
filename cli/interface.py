@@ -1,4 +1,4 @@
-"""CLI commands and interface for the AI Agent Orchestration System."""
+"""CLI commands and interface for EntraFlow."""
 
 import click
 import json
@@ -18,7 +18,7 @@ console = Console()
 
 @click.group()
 def cli():
-    """AI Agent Orchestration System CLI"""
+    """EntraFlow: AI Agent Orchestration System CLI"""
     pass
 
 

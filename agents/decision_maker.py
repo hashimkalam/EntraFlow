@@ -1,4 +1,4 @@
-"""DecisionMaker agent for applying business rules and logic."""
+"""EntraFlow DecisionMaker agent for applying business rules and logic."""
 
 from typing import Any, Dict, List
 from enum import Enum

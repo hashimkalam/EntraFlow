@@ -100,7 +100,7 @@ class Notifier(BaseAgent):
         report = {
             'metadata': {
                 'generated_at': datetime.now().isoformat(),
-                'report_type': 'Enterprise Analysis Report',
+                'report_type': 'EntraFlow Enterprise Analysis Report',
                 'version': '1.0'
             },
             'executive_summary': self._generate_executive_summary(decisions, analysis_results),
@@ -252,7 +252,7 @@ class Notifier(BaseAgent):
         """Format report as plain text."""
         lines = []
         lines.append("=" * 80)
-        lines.append("ENTERPRISE ANALYSIS REPORT")
+        lines.append("ENTRAFLOW ANALYSIS REPORT")
         lines.append("=" * 80)
         lines.append("")
         lines.append(f"Generated: {report['metadata']['generated_at']}")
@@ -276,7 +276,7 @@ class Notifier(BaseAgent):
         html = f"""<!DOCTYPE html>
 <html>
 <head>
-    <title>Enterprise Analysis Report</title>
+    <title>EntraFlow Analysis Report</title>
     <style>
         body {{ font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }}
         .container {{ background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }}
@@ -292,7 +292,7 @@ class Notifier(BaseAgent):
 </head>
 <body>
     <div class="container">
-        <h1>Enterprise Analysis Report</h1>
+        <h1>EntraFlow Analysis Report</h1>
         <p class="metadata">Generated: {report['metadata']['generated_at']}</p>
         
         <div class="summary">

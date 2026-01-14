@@ -1,4 +1,4 @@
-"""Entry point for the AI Agent Orchestration System."""
+"""EntraFlow: AI Agent Orchestration System Entry Point."""
 
 import os
 import sys

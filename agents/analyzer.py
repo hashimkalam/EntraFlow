@@ -1,4 +1,4 @@
-"""Analyzer agent for performing ML-based analysis on data."""
+"""EntraFlow Analyzer agent for performing ML-based analysis on data."""
 
 from typing import Any, Dict, List
 from collections import Counter
