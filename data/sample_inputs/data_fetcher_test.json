@@ -1,0 +1,5 @@
+{
+  "location": "New York",
+  "news_query": "Artificial Intelligence in business",
+  "sources": ["weather", "news"]
+}

@@ -1,0 +1,73 @@
+{
+  "workflow_name": "enterprise_analysis",
+  "workflow_id": "20260114_161739",
+  "timestamp": "2026-01-14T16:17:39.279821",
+  "state": {
+    "outputs": {
+      "location": "London",
+      "news_query": "AI technology",
+      "datafetcher_output": {
+        "data": {
+          "weather": {
+            "location": "London",
+            "temperature": 15.5,
+            "description": "Partly cloudy",
+            "humidity": 65,
+            "wind_speed": 12.5,
+            "mock": true
+          },
+          "news": {
+            "query": "technology",
+            "articles": [
+              {
+                "title": "AI Revolution in Enterprise Software",
+                "description": "Companies are increasingly adopting AI-powered solutions to streamline operations.",
+                "content": "The integration of artificial intelligence in enterprise software has led to significant improvements in efficiency and decision-making processes.",
+                "source": "Tech News Daily",
+                "publishedAt": "2026-01-14T16:17:39.277345"
+              },
+              {
+                "title": "Cloud Computing Trends for 2026",
+                "description": "Latest trends show continued growth in cloud adoption across industries.",
+                "content": "Cloud computing continues to transform how businesses operate, with multi-cloud strategies becoming the norm.",
+                "source": "Enterprise Tech",
+                "publishedAt": "2026-01-14T16:17:39.277345"
+              },
+              {
+                "title": "Cybersecurity Challenges in Modern Enterprises",
+                "description": "Organizations face increasing threats in the digital landscape.",
+                "content": "As digital transformation accelerates, cybersecurity remains a top priority for enterprises worldwide.",
+                "source": "Security Today",
+                "publishedAt": "2026-01-14T16:17:39.277345"
+              }
+            ],
+            "totalResults": 3,
+            "mock": true
+          }
+        },
+        "metadata": {
+          "fetch_time": "2026-01-14T16:17:39.273809",
+          "sources_requested": [
+            "weather",
+            "news"
+          ],
+          "sources_fetched": [
+            "weather",
+            "news"
+          ]
+        }
+      }
+    },
+    "status": "failed",
+    "completed_agents": [
+      "DataFetcher"
+    ],
+    "failed_agents": [
+      "Analyzer"
+    ],
+    "start_time": "2026-01-14T16:17:39.271521",
+    "end_time": "2026-01-14T16:17:39.279821",
+    "execution_time": 0.011825084686279297,
+    "error": "[Orchestrator:enterprise_analysis] Critical agent 'Analyzer' failed: [Analyzer] Validation failed: Input validation failed: [Analyzer] Validation failed: Missing required input 'raw_data'"
+  }
+}

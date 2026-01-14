@@ -1,0 +1,437 @@
+{
+  "workflow_name": "enterprise_analysis",
+  "workflow_id": "20260114_161928",
+  "timestamp": "2026-01-14T16:19:28.842927",
+  "state": {
+    "outputs": {
+      "location": "London",
+      "news_query": "AI technology",
+      "raw_data": {
+        "data": {
+          "weather": {
+            "location": "London",
+            "temperature": 15.5,
+            "description": "Partly cloudy",
+            "humidity": 65,
+            "wind_speed": 12.5,
+            "mock": true
+          },
+          "news": {
+            "query": "AI technology",
+            "articles": [
+              {
+                "title": "AI Revolution in Enterprise Software",
+                "description": "Companies are increasingly adopting AI-powered solutions to streamline operations.",
+                "content": "The integration of artificial intelligence in enterprise software has led to significant improvements in efficiency and decision-making processes.",
+                "source": "Tech News Daily",
+                "publishedAt": "2026-01-14T16:19:28.707485"
+              },
+              {
+                "title": "Cloud Computing Trends for 2026",
+                "description": "Latest trends show continued growth in cloud adoption across industries.",
+                "content": "Cloud computing continues to transform how businesses operate, with multi-cloud strategies becoming the norm.",
+                "source": "Enterprise Tech",
+                "publishedAt": "2026-01-14T16:19:28.707485"
+              },
+              {
+                "title": "Cybersecurity Challenges in Modern Enterprises",
+                "description": "Organizations face increasing threats in the digital landscape.",
+                "content": "As digital transformation accelerates, cybersecurity remains a top priority for enterprises worldwide.",
+                "source": "Security Today",
+                "publishedAt": "2026-01-14T16:19:28.707485"
+              }
+            ],
+            "totalResults": 3,
+            "mock": true
+          }
+        },
+        "metadata": {
+          "fetch_time": "2026-01-14T16:19:28.706478",
+          "sources_requested": [
+            "weather",
+            "news"
+          ],
+          "sources_fetched": [
+            "weather",
+            "news"
+          ]
+        }
+      },
+      "analysis_results": {
+        "sentiment": {
+          "news": {
+            "overall_sentiment": 0.442,
+            "sentiment_label": "positive",
+            "confidence": 0.938,
+            "article_sentiments": [
+              {
+                "title": "AI Revolution in Enterprise Software",
+                "sentiment_score": 0.978,
+                "sentiment_label": "positive",
+                "confidence": 0.989
+              },
+              {
+                "title": "Cloud Computing Trends for 2026",
+                "sentiment_score": 0.999,
+                "sentiment_label": "positive",
+                "confidence": 0.999
+              },
+              {
+                "title": "Cybersecurity Challenges in Modern Enterprises",
+                "sentiment_score": -0.65,
+                "sentiment_label": "negative",
+                "confidence": 0.825
+              }
+            ],
+            "total_articles": 3
+          }
+        },
+        "keywords": {
+          "news": {
+            "cloud": 2,
+            "trends": 2,
+            "revolution": 1,
+            "enterprise": 1,
+            "software": 1,
+            "companies": 1,
+            "increasingly": 1,
+            "adopting": 1,
+            "powered": 1,
+            "solutions": 1
+          }
+        },
+        "statistics": {
+          "weather": {
+            "location": "London",
+            "temperature": 15.5,
+            "temperature_category": "mild",
+            "humidity": 65,
+            "wind_speed": 12.5,
+            "description": "Partly cloudy"
+          }
+        },
+        "insights": [
+          "Analyzed 3 articles with overall positive sentiment (score: 0.44)",
+          "✓ Positive sentiment indicates favorable conditions",
+          "Top trending keyword: 'cloud' (mentioned 2 times)",
+          "Weather conditions: mild temperature"
+        ]
+      },
+      "decisions": {
+        "priority": "low",
+        "actions": [
+          "Maintain current strategy",
+          "Weather conditions normal - no special actions required"
+        ],
+        "alerts": [],
+        "decisions": {
+          "sentiment": {
+            "sentiment_score": 0.442,
+            "sentiment_label": "positive",
+            "confidence": 0.938,
+            "priority": "low",
+            "actions": [
+              "Maintain current strategy"
+            ],
+            "alerts": []
+          },
+          "keywords": {
+            "top_keywords": {
+              "cloud": 2,
+              "trends": 2,
+              "revolution": 1,
+              "enterprise": 1,
+              "software": 1,
+              "companies": 1,
+              "increasingly": 1,
+              "adopting": 1,
+              "powered": 1,
+              "solutions": 1
+            },
+            "actions": []
+          },
+          "weather": {
+            "temperature_category": "mild",
+            "actions": [
+              "Weather conditions normal - no special actions required"
+            ]
+          }
+        },
+        "summary": "Decision: LOW priority | 2 action(s) recommended | Sentiment: positive (0.44)"
+      },
+      "report": {
+        "report": {
+          "metadata": {
+            "generated_at": "2026-01-14T16:19:28.840413",
+            "report_type": "Enterprise Analysis Report",
+            "version": "1.0"
+          },
+          "executive_summary": "PRIORITY LEVEL: LOW\n\nDecision: LOW priority | 2 action(s) recommended | Sentiment: positive (0.44)\n\nSentiment Analysis: POSITIVE (score: 0.44)\nAnalyzed 3 news article(s)\n\nKey Insights:\n  • Analyzed 3 articles with overall positive sentiment (score: 0.44)\n  • ✓ Positive sentiment indicates favorable conditions\n  • Top trending keyword: 'cloud' (mentioned 2 times)\n  • Weather conditions: mild temperature\n\nRecommended Actions:\n  1. Maintain current strategy\n  2. Weather conditions normal - no special actions required",
+          "priority": "low",
+          "decisions": {
+            "summary": "Decision: LOW priority | 2 action(s) recommended | Sentiment: positive (0.44)",
+            "detailed_decisions": {
+              "sentiment": {
+                "sentiment_score": 0.442,
+                "sentiment_label": "positive",
+                "confidence": 0.938,
+                "priority": "low",
+                "actions": [
+                  "Maintain current strategy"
+                ],
+                "alerts": []
+              },
+              "keywords": {
+                "top_keywords": {
+                  "cloud": 2,
+                  "trends": 2,
+                  "revolution": 1,
+                  "enterprise": 1,
+                  "software": 1,
+                  "companies": 1,
+                  "increasingly": 1,
+                  "adopting": 1,
+                  "powered": 1,
+                  "solutions": 1
+                },
+                "actions": []
+              },
+              "weather": {
+                "temperature_category": "mild",
+                "actions": [
+                  "Weather conditions normal - no special actions required"
+                ]
+              }
+            },
+            "recommended_actions": [
+              "Maintain current strategy",
+              "Weather conditions normal - no special actions required"
+            ],
+            "alerts": []
+          },
+          "analysis": {
+            "sentiment": {
+              "news": {
+                "overall_sentiment": 0.442,
+                "sentiment_label": "positive",
+                "confidence": 0.938,
+                "article_sentiments": [
+                  {
+                    "title": "AI Revolution in Enterprise Software",
+                    "sentiment_score": 0.978,
+                    "sentiment_label": "positive",
+                    "confidence": 0.989
+                  },
+                  {
+                    "title": "Cloud Computing Trends for 2026",
+                    "sentiment_score": 0.999,
+                    "sentiment_label": "positive",
+                    "confidence": 0.999
+                  },
+                  {
+                    "title": "Cybersecurity Challenges in Modern Enterprises",
+                    "sentiment_score": -0.65,
+                    "sentiment_label": "negative",
+                    "confidence": 0.825
+                  }
+                ],
+                "total_articles": 3
+              }
+            },
+            "keywords": {
+              "news": {
+                "cloud": 2,
+                "trends": 2,
+                "revolution": 1,
+                "enterprise": 1,
+                "software": 1,
+                "companies": 1,
+                "increasingly": 1,
+                "adopting": 1,
+                "powered": 1,
+                "solutions": 1
+              }
+            },
+            "statistics": {
+              "weather": {
+                "location": "London",
+                "temperature": 15.5,
+                "temperature_category": "mild",
+                "humidity": 65,
+                "wind_speed": 12.5,
+                "description": "Partly cloudy"
+              }
+            },
+            "insights": [
+              "Analyzed 3 articles with overall positive sentiment (score: 0.44)",
+              "✓ Positive sentiment indicates favorable conditions",
+              "Top trending keyword: 'cloud' (mentioned 2 times)",
+              "Weather conditions: mild temperature"
+            ]
+          }
+        },
+        "report_file": "data\\outputs\\report_20260114_161928.json",
+        "timestamp": "2026-01-14T16:19:28.840920",
+        "summary": "PRIORITY LEVEL: LOW\n\nDecision: LOW priority | 2 action(s) recommended | Sentiment: positive (0.44)\n\nSentiment Analysis: POSITIVE (score: 0.44)\nAnalyzed 3 news article(s)\n\nKey Insights:\n  • Analyzed 3 articles with overall positive sentiment (score: 0.44)\n  • ✓ Positive sentiment indicates favorable conditions\n  • Top trending keyword: 'cloud' (mentioned 2 times)\n  • Weather conditions: mild temperature\n\nRecommended Actions:\n  1. Maintain current strategy\n  2. Weather conditions normal - no special actions required"
+      },
+      "validated_report": {
+        "validated_report": {
+          "report": {
+            "metadata": {
+              "generated_at": "2026-01-14T16:19:28.840413",
+              "report_type": "Enterprise Analysis Report",
+              "version": "1.0"
+            },
+            "executive_summary": "PRIORITY LEVEL: LOW\n\nDecision: LOW priority | 2 action(s) recommended | Sentiment: positive (0.44)\n\nSentiment Analysis: POSITIVE (score: 0.44)\nAnalyzed 3 news article(s)\n\nKey Insights:\n  • Analyzed 3 articles with overall positive sentiment (score: 0.44)\n  • ✓ Positive sentiment indicates favorable conditions\n  • Top trending keyword: 'cloud' (mentioned 2 times)\n  • Weather conditions: mild temperature\n\nRecommended Actions:\n  1. Maintain current strategy\n  2. Weather conditions normal - no special actions required",
+            "priority": "low",
+            "decisions": {
+              "summary": "Decision: LOW priority | 2 action(s) recommended | Sentiment: positive (0.44)",
+              "detailed_decisions": {
+                "sentiment": {
+                  "sentiment_score": 0.442,
+                  "sentiment_label": "positive",
+                  "confidence": 0.938,
+                  "priority": "low",
+                  "actions": [
+                    "Maintain current strategy"
+                  ],
+                  "alerts": []
+                },
+                "keywords": {
+                  "top_keywords": {
+                    "cloud": 2,
+                    "trends": 2,
+                    "revolution": 1,
+                    "enterprise": 1,
+                    "software": 1,
+                    "companies": 1,
+                    "increasingly": 1,
+                    "adopting": 1,
+                    "powered": 1,
+                    "solutions": 1
+                  },
+                  "actions": []
+                },
+                "weather": {
+                  "temperature_category": "mild",
+                  "actions": [
+                    "Weather conditions normal - no special actions required"
+                  ]
+                }
+              },
+              "recommended_actions": [
+                "Maintain current strategy",
+                "Weather conditions normal - no special actions required"
+              ],
+              "alerts": []
+            },
+            "analysis": {
+              "sentiment": {
+                "news": {
+                  "overall_sentiment": 0.442,
+                  "sentiment_label": "positive",
+                  "confidence": 0.938,
+                  "article_sentiments": [
+                    {
+                      "title": "AI Revolution in Enterprise Software",
+                      "sentiment_score": 0.978,
+                      "sentiment_label": "positive",
+                      "confidence": 0.989
+                    },
+                    {
+                      "title": "Cloud Computing Trends for 2026",
+                      "sentiment_score": 0.999,
+                      "sentiment_label": "positive",
+                      "confidence": 0.999
+                    },
+                    {
+                      "title": "Cybersecurity Challenges in Modern Enterprises",
+                      "sentiment_score": -0.65,
+                      "sentiment_label": "negative",
+                      "confidence": 0.825
+                    }
+                  ],
+                  "total_articles": 3
+                }
+              },
+              "keywords": {
+                "news": {
+                  "cloud": 2,
+                  "trends": 2,
+                  "revolution": 1,
+                  "enterprise": 1,
+                  "software": 1,
+                  "companies": 1,
+                  "increasingly": 1,
+                  "adopting": 1,
+                  "powered": 1,
+                  "solutions": 1
+                }
+              },
+              "statistics": {
+                "weather": {
+                  "location": "London",
+                  "temperature": 15.5,
+                  "temperature_category": "mild",
+                  "humidity": 65,
+                  "wind_speed": 12.5,
+                  "description": "Partly cloudy"
+                }
+              },
+              "insights": [
+                "Analyzed 3 articles with overall positive sentiment (score: 0.44)",
+                "✓ Positive sentiment indicates favorable conditions",
+                "Top trending keyword: 'cloud' (mentioned 2 times)",
+                "Weather conditions: mild temperature"
+              ]
+            }
+          },
+          "report_file": "data\\outputs\\report_20260114_161928.json",
+          "timestamp": "2026-01-14T16:19:28.840920",
+          "summary": "PRIORITY LEVEL: LOW\n\nDecision: LOW priority | 2 action(s) recommended | Sentiment: positive (0.44)\n\nSentiment Analysis: POSITIVE (score: 0.44)\nAnalyzed 3 news article(s)\n\nKey Insights:\n  • Analyzed 3 articles with overall positive sentiment (score: 0.44)\n  • ✓ Positive sentiment indicates favorable conditions\n  • Top trending keyword: 'cloud' (mentioned 2 times)\n  • Weather conditions: mild temperature\n\nRecommended Actions:\n  1. Maintain current strategy\n  2. Weather conditions normal - no special actions required"
+        },
+        "validation_results": {
+          "completeness": {
+            "status": "complete"
+          },
+          "consistency": {
+            "priority": "consistent"
+          },
+          "critical_issues": [],
+          "warnings": [],
+          "quality_assurance": {
+            "checks_performed": [
+              "content_check",
+              "metadata_check",
+              "actionability_check",
+              "priority_check"
+            ],
+            "passed": true,
+            "issues": []
+          }
+        },
+        "conflicts_found": [],
+        "supervisor_notes": [
+          "✓ No critical issues found",
+          "✓ Quality assurance checks passed",
+          "✓ Workflow approved for delivery"
+        ],
+        "approval_status": "approved",
+        "supervisor_summary": "Approval Status: APPROVED\n\nSupervisor Notes:\n  • ✓ No critical issues found\n  • ✓ Quality assurance checks passed\n  • ✓ Workflow approved for delivery"
+      }
+    },
+    "status": "completed",
+    "completed_agents": [
+      "DataFetcher",
+      "Analyzer",
+      "DecisionMaker",
+      "Notifier",
+      "Supervisor"
+    ],
+    "failed_agents": [],
+    "start_time": "2026-01-14T16:19:28.704580",
+    "conditional_branch": "normal",
+    "end_time": "2026-01-14T16:19:28.842927",
+    "execution_time": 0.14044499397277832
+  }
+}
