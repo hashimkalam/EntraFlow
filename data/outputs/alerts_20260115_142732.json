@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-01-15T14:27:32.344799",
+  "alert_count": 1,
+  "alerts": [
+    {
+      "type": "HIGH_NEGATIVE_SENTIMENT",
+      "message": "Significant negative sentiment detected (score: -0.33)",
+      "severity": "high"
+    }
+  ]
+}

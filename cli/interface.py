@@ -138,8 +138,22 @@ def _display_workflow_result(result):
     status = result.get('status', 'unknown')
     color = "green" if status == "completed" else "red"
     
-    # Executive Summary Panel
-    summary = result.get('outputs', {}).get('notifier_output', {}).get('summary', 'No summary available')
+    # Executive Summary Extraction
+    outputs = result.get('outputs', {})
+    summary = "No summary available"
+    
+    # Try to find a summary in known output keys
+    # We prefer validated_report (Supervisor) -> report (Notifier) -> others
+    for key in ['validated_report', 'report', 'notifier_output']:
+        if key in outputs and isinstance(outputs[key], dict):
+            # Check for various summary field names
+            for s_key in ['supervisor_summary', 'summary', 'executive_summary']:
+                if outputs[key].get(s_key):
+                    summary = outputs[key][s_key]
+                    break
+            if summary != "No summary available":
+                break
+    
     console.print(Panel(summary, title="[bold]Workflow Summary[/bold]", border_style=color))
     
     # Workflow Metadata

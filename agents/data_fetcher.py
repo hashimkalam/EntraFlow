@@ -106,9 +106,9 @@ class DataFetcher(BaseAgent):
         # Get API configuration from environment or config
         api_key = os.getenv('OPENWEATHER_API_KEY', '')
         
-        # Use mock data if no API key is provided
-        if not api_key:
-            self.logger.warning("No OpenWeatherMap API key found, using mock data")
+        # Use mock data if no API key is provided or it's a placeholder
+        if not api_key or 'your_' in api_key:
+            self.logger.warning("No OpenWeatherMap API key found (or placeholder detected), using mock data")
             mock_data = {
                 'location': location,
                 'temperature': 15.5,
@@ -176,9 +176,9 @@ class DataFetcher(BaseAgent):
         # Get API configuration
         api_key = os.getenv('NEWS_API_KEY', '')
         
-        # Use mock data if no API key is provided
-        if not api_key:
-            self.logger.warning("No NewsAPI key found, using mock data")
+        # Use mock data if no API key is provided or it's a placeholder
+        if not api_key or 'your_' in api_key:
+            self.logger.warning("No NewsAPI key found (or placeholder detected), using mock data")
             mock_data = {
                 'query': query,
                 'articles': [

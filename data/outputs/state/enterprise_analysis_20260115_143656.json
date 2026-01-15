@@ -1,0 +1,538 @@
+{
+  "workflow_name": "enterprise_analysis",
+  "workflow_id": "20260115_143656",
+  "timestamp": "2026-01-15T14:38:01.875372",
+  "state": {
+    "outputs": {
+      "location": "London",
+      "news_query": "AI technology",
+      "raw_data": {
+        "data": {
+          "weather": {
+            "location": "London",
+            "temperature": 8.89,
+            "description": "overcast clouds",
+            "humidity": 91,
+            "wind_speed": 4.12,
+            "mock": false
+          },
+          "news": {
+            "query": "technology",
+            "articles": [
+              {
+                "title": "Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says",
+                "description": "Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.",
+                "content": "Taiwans richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the islands cutting-edge companies.\r\nThe combined a… [+275 chars]",
+                "source": "Bloomberg",
+                "publishedAt": "2026-01-14T08:09:54+00:00"
+              },
+              {
+                "title": "Why is nudification technology suddenly a major issue?",
+                "description": "Minister of State Niamh Smyth has written to the Garda Commissioner about the AI chatbot Grok, owned by Elon Musk, and similar apps, which are being used to generate illegal sexualised images of both children and adults.",
+                "content": "AI chatbot Grok has brought something that was largely hidden into the mainstream.\r\nDeepfake technology that can undress anyone in any image has existed for years but it was mostly confined to niche … [+4424 chars]",
+                "source": "RTE",
+                "publishedAt": "2026-01-14T06:00:02Z"
+              },
+              {
+                "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+                "description": "Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.",
+                "content": "Broadcaster Gráinne Seoige has said that sexualised images of her made with deepfake technology have left her deeply traumatised.\r\nShe is calling for action on the availability of such technology to … [+3474 chars]",
+                "source": "RTE",
+                "publishedAt": "2026-01-14T06:00:00Z"
+              },
+              {
+                "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+                "description": "Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it",
+                "content": "Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it also raises questions about the law.\r\nConsi… [+5654 chars]",
+                "source": "Next Big Future",
+                "publishedAt": "2026-01-14T00:34:53Z"
+              }
+            ],
+            "totalResults": 4,
+            "mock": false
+          }
+        },
+        "metadata": {
+          "fetch_time": "2026-01-15T14:36:56.167783",
+          "sources_requested": [
+            "weather",
+            "news"
+          ],
+          "sources_fetched": [
+            "weather",
+            "news"
+          ]
+        }
+      },
+      "analysis_results": {
+        "sentiment": {
+          "news": {
+            "overall_sentiment": -0.492,
+            "sentiment_label": "negative",
+            "confidence": 0.99,
+            "article_sentiments": [
+              {
+                "title": "Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says",
+                "sentiment_score": 0.975,
+                "sentiment_label": "positive",
+                "confidence": 0.988
+              },
+              {
+                "title": "Why is nudification technology suddenly a major issue?",
+                "sentiment_score": -0.99,
+                "sentiment_label": "negative",
+                "confidence": 0.995
+              },
+              {
+                "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+                "sentiment_score": -0.99,
+                "sentiment_label": "negative",
+                "confidence": 0.995
+              },
+              {
+                "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+                "sentiment_score": -0.962,
+                "sentiment_label": "negative",
+                "confidence": 0.981
+              }
+            ],
+            "total_articles": 4
+          }
+        },
+        "keywords": {
+          "news": {
+            "technology": 4,
+            "taiwan": 2,
+            "richest": 2,
+            "wealth": 2,
+            "year": 2,
+            "nudification": 2,
+            "sexualised": 2,
+            "images": 2,
+            "seoige": 2,
+            "growth": 1
+          }
+        },
+        "statistics": {
+          "weather": {
+            "location": "London",
+            "temperature": 8.89,
+            "temperature_category": "cold",
+            "humidity": 91,
+            "wind_speed": 4.12,
+            "description": "overcast clouds"
+          }
+        },
+        "insights": [
+          "Analyzed 4 articles with overall negative sentiment (score: -0.49)",
+          "⚠️ Negative sentiment detected - recommend further investigation",
+          "Top trending keyword: 'technology' (mentioned 4 times)",
+          "Weather conditions: cold temperature",
+          "✨ Enhanced LLM analysis included"
+        ],
+        "enhanced_insights": "\n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology suddenly a major issue?: Minister of State Niamh Smyth has written to the Garda Commissioner about the AI chatbot Grok, owned by Elon Musk, and similar apps, which are being used to generate illegal sexualised images of both \n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- The main business trend has been to reduce the use of digital images.\n- The main business trend is to reduce the use of digital images.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device."
+      },
+      "decisions": {
+        "priority": "high",
+        "actions": [
+          "Monitor situation closely",
+          "Prepare contingency plans",
+          "Positive trends identified: growth",
+          "Weather conditions normal - no special actions required",
+          "✨ Strategic AI Advisory generated"
+        ],
+        "alerts": [
+          {
+            "type": "HIGH_NEGATIVE_SENTIMENT",
+            "message": "Significant negative sentiment detected (score: -0.49)",
+            "severity": "high"
+          }
+        ],
+        "decisions": {
+          "sentiment": {
+            "sentiment_score": -0.492,
+            "sentiment_label": "negative",
+            "confidence": 0.99,
+            "priority": "high",
+            "actions": [
+              "Monitor situation closely",
+              "Prepare contingency plans"
+            ],
+            "alerts": [
+              {
+                "type": "HIGH_NEGATIVE_SENTIMENT",
+                "message": "Significant negative sentiment detected (score: -0.49)",
+                "severity": "high"
+              }
+            ]
+          },
+          "keywords": {
+            "top_keywords": {
+              "technology": 4,
+              "taiwan": 2,
+              "richest": 2,
+              "wealth": 2,
+              "year": 2,
+              "nudification": 2,
+              "sexualised": 2,
+              "images": 2,
+              "seoige": 2,
+              "growth": 1
+            },
+            "actions": [
+              "Positive trends identified: growth"
+            ],
+            "positive_keywords": [
+              "growth"
+            ]
+          },
+          "weather": {
+            "temperature_category": "cold",
+            "actions": [
+              "Weather conditions normal - no special actions required"
+            ]
+          }
+        },
+        "summary": "Decision: HIGH priority | 1 alert(s) triggered | 4 action(s) recommended | Sentiment: negative (-0.49)",
+        "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.492)\n        - Insights: Analyzed 4 articles with overall negative sentiment (score: -0.49)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 4 times)\nWeather conditions: cold temperature\n✨ Enhanced LLM analysis included\n        - Weather: overcast clouds, 8.89°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- We recommend that you do not discuss the information in this section, but simply give it a thought. \n- The objective of this research is to evaluate the impact of investing in the U.S. in a market strategy and evaluate a company's performance. \n- The research team will examine the company's performance and determine the optimal options to achieve its goals. \n- We will also analyze the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's technical and financial performance, including technical feasibility, performance, and risk. \n- The team will look at the company's performance by considering the impact of new products and services, its future prospects, and its prospects for the future. \n- The team will look at the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating what its current and future business and financial performance look like. \nI'm a big fan of R&D. I love it. It's the best way to plan your business. I am also a big fan of R&D, especially when it comes to the financial. I love the opportunity for R&D to help grow our businesses and grow our customers. I love that R&D is being used by more companies than ever before in its use and use. I want to help make that happen.\n- The results of this research will be evaluated through a series of two-stage research that is expected to conclude with a consensus answer to this question. \n- The team will review and analyze the results of this research. \n- The results will be reported and reviewed by the team.\n- When you have reviewed the results, you will be able to make a recommendation to the team as to how these companies can succeed in this market. \n- The team will evaluate the company's performance, and determine the best options to achieve its goals. \n- The team will analyze the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will analyze the company's performance by reviewing the company's performance by reviewing the company's performance"
+      },
+      "report": {
+        "report": {
+          "metadata": {
+            "generated_at": "2026-01-15T14:38:01.868955",
+            "report_type": "EntraFlow Enterprise Analysis Report",
+            "version": "1.0"
+          },
+          "executive_summary": "PRIORITY LEVEL: HIGH\n\nDecision: HIGH priority | 1 alert(s) triggered | 4 action(s) recommended | Sentiment: negative (-0.49)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.492)\n        - Insights: Analyzed 4 articles with overall negative sentiment (score: -0.49)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 4 times)\nWeather conditions: cold temperature\n✨ Enhanced LLM analysis included\n        - Weather: overcast clouds, 8.89°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- We recommend that you do not discuss the information in this section, but simply give it a thought. \n- The objective of this research is to evaluate the impact of investing in the U.S. in a market strategy and evaluate a company's performance. \n- The research team will examine the company's performance and determine the optimal options to achieve its goals. \n- We will also analyze the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's technical and financial performance, including technical feasibility, performance, and risk. \n- The team will look at the company's performance by considering the impact of new products and services, its future prospects, and its prospects for the future. \n- The team will look at the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating what its current and future business and financial performance look like. \nI'm a big fan of R&D. I love it. It's the best way to plan your business. I am also a big fan of R&D, especially when it comes to the financial. I love the opportunity for R&D to help grow our businesses and grow our customers. I love that R&D is being used by more companies than ever before in its use and use. I want to help make that happen.\n- The results of this research will be evaluated through a series of two-stage research that is expected to conclude with a consensus answer to this question. \n- The team will review and analyze the results of this research. \n- The results will be reported and reviewed by the team.\n- When you have reviewed the results, you will be able to make a recommendation to the team as to how these companies can succeed in this market. \n- The team will evaluate the company's performance, and determine the best options to achieve its goals. \n- The team will analyze the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will analyze the company's performance by reviewing the company's performance by reviewing the company's performance\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.49)\nAnalyzed 4 news article(s)\n\nKey Insights:\n  • Analyzed 4 articles with overall negative sentiment (score: -0.49)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'technology' (mentioned 4 times)\n  • Weather conditions: cold temperature\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology suddenly a major issue?: Minister of State Niamh Smyth has written to the Garda Commissioner about the AI chatbot Grok, owned by Elon Musk, and similar apps, which are being used to generate illegal sexualised images of both \n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- The main business trend has been to reduce the use of digital images.\n- The main business trend is to reduce the use of digital images.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [HIGH] Significant negative sentiment detected (score: -0.49)\n\nRecommended Actions:\n  1. Monitor situation closely\n  2. Prepare contingency plans\n  3. Positive trends identified: growth\n  4. Weather conditions normal - no special actions required\n  5. ✨ Strategic AI Advisory generated",
+          "priority": "high",
+          "decisions": {
+            "summary": "Decision: HIGH priority | 1 alert(s) triggered | 4 action(s) recommended | Sentiment: negative (-0.49)",
+            "detailed_decisions": {
+              "sentiment": {
+                "sentiment_score": -0.492,
+                "sentiment_label": "negative",
+                "confidence": 0.99,
+                "priority": "high",
+                "actions": [
+                  "Monitor situation closely",
+                  "Prepare contingency plans"
+                ],
+                "alerts": [
+                  {
+                    "type": "HIGH_NEGATIVE_SENTIMENT",
+                    "message": "Significant negative sentiment detected (score: -0.49)",
+                    "severity": "high"
+                  }
+                ]
+              },
+              "keywords": {
+                "top_keywords": {
+                  "technology": 4,
+                  "taiwan": 2,
+                  "richest": 2,
+                  "wealth": 2,
+                  "year": 2,
+                  "nudification": 2,
+                  "sexualised": 2,
+                  "images": 2,
+                  "seoige": 2,
+                  "growth": 1
+                },
+                "actions": [
+                  "Positive trends identified: growth"
+                ],
+                "positive_keywords": [
+                  "growth"
+                ]
+              },
+              "weather": {
+                "temperature_category": "cold",
+                "actions": [
+                  "Weather conditions normal - no special actions required"
+                ]
+              }
+            },
+            "recommended_actions": [
+              "Monitor situation closely",
+              "Prepare contingency plans",
+              "Positive trends identified: growth",
+              "Weather conditions normal - no special actions required",
+              "✨ Strategic AI Advisory generated"
+            ],
+            "alerts": [
+              {
+                "type": "HIGH_NEGATIVE_SENTIMENT",
+                "message": "Significant negative sentiment detected (score: -0.49)",
+                "severity": "high"
+              }
+            ]
+          },
+          "analysis": {
+            "sentiment": {
+              "news": {
+                "overall_sentiment": -0.492,
+                "sentiment_label": "negative",
+                "confidence": 0.99,
+                "article_sentiments": [
+                  {
+                    "title": "Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says",
+                    "sentiment_score": 0.975,
+                    "sentiment_label": "positive",
+                    "confidence": 0.988
+                  },
+                  {
+                    "title": "Why is nudification technology suddenly a major issue?",
+                    "sentiment_score": -0.99,
+                    "sentiment_label": "negative",
+                    "confidence": 0.995
+                  },
+                  {
+                    "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+                    "sentiment_score": -0.99,
+                    "sentiment_label": "negative",
+                    "confidence": 0.995
+                  },
+                  {
+                    "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+                    "sentiment_score": -0.962,
+                    "sentiment_label": "negative",
+                    "confidence": 0.981
+                  }
+                ],
+                "total_articles": 4
+              }
+            },
+            "keywords": {
+              "news": {
+                "technology": 4,
+                "taiwan": 2,
+                "richest": 2,
+                "wealth": 2,
+                "year": 2,
+                "nudification": 2,
+                "sexualised": 2,
+                "images": 2,
+                "seoige": 2,
+                "growth": 1
+              }
+            },
+            "statistics": {
+              "weather": {
+                "location": "London",
+                "temperature": 8.89,
+                "temperature_category": "cold",
+                "humidity": 91,
+                "wind_speed": 4.12,
+                "description": "overcast clouds"
+              }
+            },
+            "insights": [
+              "Analyzed 4 articles with overall negative sentiment (score: -0.49)",
+              "⚠️ Negative sentiment detected - recommend further investigation",
+              "Top trending keyword: 'technology' (mentioned 4 times)",
+              "Weather conditions: cold temperature",
+              "✨ Enhanced LLM analysis included"
+            ],
+            "enhanced_insights": "\n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology suddenly a major issue?: Minister of State Niamh Smyth has written to the Garda Commissioner about the AI chatbot Grok, owned by Elon Musk, and similar apps, which are being used to generate illegal sexualised images of both \n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- The main business trend has been to reduce the use of digital images.\n- The main business trend is to reduce the use of digital images.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device."
+          },
+          "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.492)\n        - Insights: Analyzed 4 articles with overall negative sentiment (score: -0.49)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 4 times)\nWeather conditions: cold temperature\n✨ Enhanced LLM analysis included\n        - Weather: overcast clouds, 8.89°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- We recommend that you do not discuss the information in this section, but simply give it a thought. \n- The objective of this research is to evaluate the impact of investing in the U.S. in a market strategy and evaluate a company's performance. \n- The research team will examine the company's performance and determine the optimal options to achieve its goals. \n- We will also analyze the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's technical and financial performance, including technical feasibility, performance, and risk. \n- The team will look at the company's performance by considering the impact of new products and services, its future prospects, and its prospects for the future. \n- The team will look at the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating what its current and future business and financial performance look like. \nI'm a big fan of R&D. I love it. It's the best way to plan your business. I am also a big fan of R&D, especially when it comes to the financial. I love the opportunity for R&D to help grow our businesses and grow our customers. I love that R&D is being used by more companies than ever before in its use and use. I want to help make that happen.\n- The results of this research will be evaluated through a series of two-stage research that is expected to conclude with a consensus answer to this question. \n- The team will review and analyze the results of this research. \n- The results will be reported and reviewed by the team.\n- When you have reviewed the results, you will be able to make a recommendation to the team as to how these companies can succeed in this market. \n- The team will evaluate the company's performance, and determine the best options to achieve its goals. \n- The team will analyze the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will analyze the company's performance by reviewing the company's performance by reviewing the company's performance"
+        },
+        "report_file": "data\\outputs\\report_20260115_143801.json",
+        "timestamp": "2026-01-15T14:38:01.872132",
+        "summary": "PRIORITY LEVEL: HIGH\n\nDecision: HIGH priority | 1 alert(s) triggered | 4 action(s) recommended | Sentiment: negative (-0.49)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.492)\n        - Insights: Analyzed 4 articles with overall negative sentiment (score: -0.49)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 4 times)\nWeather conditions: cold temperature\n✨ Enhanced LLM analysis included\n        - Weather: overcast clouds, 8.89°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- We recommend that you do not discuss the information in this section, but simply give it a thought. \n- The objective of this research is to evaluate the impact of investing in the U.S. in a market strategy and evaluate a company's performance. \n- The research team will examine the company's performance and determine the optimal options to achieve its goals. \n- We will also analyze the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's technical and financial performance, including technical feasibility, performance, and risk. \n- The team will look at the company's performance by considering the impact of new products and services, its future prospects, and its prospects for the future. \n- The team will look at the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating what its current and future business and financial performance look like. \nI'm a big fan of R&D. I love it. It's the best way to plan your business. I am also a big fan of R&D, especially when it comes to the financial. I love the opportunity for R&D to help grow our businesses and grow our customers. I love that R&D is being used by more companies than ever before in its use and use. I want to help make that happen.\n- The results of this research will be evaluated through a series of two-stage research that is expected to conclude with a consensus answer to this question. \n- The team will review and analyze the results of this research. \n- The results will be reported and reviewed by the team.\n- When you have reviewed the results, you will be able to make a recommendation to the team as to how these companies can succeed in this market. \n- The team will evaluate the company's performance, and determine the best options to achieve its goals. \n- The team will analyze the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will analyze the company's performance by reviewing the company's performance by reviewing the company's performance\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.49)\nAnalyzed 4 news article(s)\n\nKey Insights:\n  • Analyzed 4 articles with overall negative sentiment (score: -0.49)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'technology' (mentioned 4 times)\n  • Weather conditions: cold temperature\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology suddenly a major issue?: Minister of State Niamh Smyth has written to the Garda Commissioner about the AI chatbot Grok, owned by Elon Musk, and similar apps, which are being used to generate illegal sexualised images of both \n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- The main business trend has been to reduce the use of digital images.\n- The main business trend is to reduce the use of digital images.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [HIGH] Significant negative sentiment detected (score: -0.49)\n\nRecommended Actions:\n  1. Monitor situation closely\n  2. Prepare contingency plans\n  3. Positive trends identified: growth\n  4. Weather conditions normal - no special actions required\n  5. ✨ Strategic AI Advisory generated",
+        "alerts_file": "data\\outputs\\alerts_20260115_143801.json",
+        "alert_count": 1
+      },
+      "validated_report": {
+        "validated_report": {
+          "report": {
+            "metadata": {
+              "generated_at": "2026-01-15T14:38:01.868955",
+              "report_type": "EntraFlow Enterprise Analysis Report",
+              "version": "1.0"
+            },
+            "executive_summary": "PRIORITY LEVEL: HIGH\n\nDecision: HIGH priority | 1 alert(s) triggered | 4 action(s) recommended | Sentiment: negative (-0.49)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.492)\n        - Insights: Analyzed 4 articles with overall negative sentiment (score: -0.49)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 4 times)\nWeather conditions: cold temperature\n✨ Enhanced LLM analysis included\n        - Weather: overcast clouds, 8.89°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- We recommend that you do not discuss the information in this section, but simply give it a thought. \n- The objective of this research is to evaluate the impact of investing in the U.S. in a market strategy and evaluate a company's performance. \n- The research team will examine the company's performance and determine the optimal options to achieve its goals. \n- We will also analyze the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's technical and financial performance, including technical feasibility, performance, and risk. \n- The team will look at the company's performance by considering the impact of new products and services, its future prospects, and its prospects for the future. \n- The team will look at the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating what its current and future business and financial performance look like. \nI'm a big fan of R&D. I love it. It's the best way to plan your business. I am also a big fan of R&D, especially when it comes to the financial. I love the opportunity for R&D to help grow our businesses and grow our customers. I love that R&D is being used by more companies than ever before in its use and use. I want to help make that happen.\n- The results of this research will be evaluated through a series of two-stage research that is expected to conclude with a consensus answer to this question. \n- The team will review and analyze the results of this research. \n- The results will be reported and reviewed by the team.\n- When you have reviewed the results, you will be able to make a recommendation to the team as to how these companies can succeed in this market. \n- The team will evaluate the company's performance, and determine the best options to achieve its goals. \n- The team will analyze the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will analyze the company's performance by reviewing the company's performance by reviewing the company's performance\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.49)\nAnalyzed 4 news article(s)\n\nKey Insights:\n  • Analyzed 4 articles with overall negative sentiment (score: -0.49)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'technology' (mentioned 4 times)\n  • Weather conditions: cold temperature\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology suddenly a major issue?: Minister of State Niamh Smyth has written to the Garda Commissioner about the AI chatbot Grok, owned by Elon Musk, and similar apps, which are being used to generate illegal sexualised images of both \n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- The main business trend has been to reduce the use of digital images.\n- The main business trend is to reduce the use of digital images.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [HIGH] Significant negative sentiment detected (score: -0.49)\n\nRecommended Actions:\n  1. Monitor situation closely\n  2. Prepare contingency plans\n  3. Positive trends identified: growth\n  4. Weather conditions normal - no special actions required\n  5. ✨ Strategic AI Advisory generated",
+            "priority": "high",
+            "decisions": {
+              "summary": "Decision: HIGH priority | 1 alert(s) triggered | 4 action(s) recommended | Sentiment: negative (-0.49)",
+              "detailed_decisions": {
+                "sentiment": {
+                  "sentiment_score": -0.492,
+                  "sentiment_label": "negative",
+                  "confidence": 0.99,
+                  "priority": "high",
+                  "actions": [
+                    "Monitor situation closely",
+                    "Prepare contingency plans"
+                  ],
+                  "alerts": [
+                    {
+                      "type": "HIGH_NEGATIVE_SENTIMENT",
+                      "message": "Significant negative sentiment detected (score: -0.49)",
+                      "severity": "high"
+                    }
+                  ]
+                },
+                "keywords": {
+                  "top_keywords": {
+                    "technology": 4,
+                    "taiwan": 2,
+                    "richest": 2,
+                    "wealth": 2,
+                    "year": 2,
+                    "nudification": 2,
+                    "sexualised": 2,
+                    "images": 2,
+                    "seoige": 2,
+                    "growth": 1
+                  },
+                  "actions": [
+                    "Positive trends identified: growth"
+                  ],
+                  "positive_keywords": [
+                    "growth"
+                  ]
+                },
+                "weather": {
+                  "temperature_category": "cold",
+                  "actions": [
+                    "Weather conditions normal - no special actions required"
+                  ]
+                }
+              },
+              "recommended_actions": [
+                "Monitor situation closely",
+                "Prepare contingency plans",
+                "Positive trends identified: growth",
+                "Weather conditions normal - no special actions required",
+                "✨ Strategic AI Advisory generated"
+              ],
+              "alerts": [
+                {
+                  "type": "HIGH_NEGATIVE_SENTIMENT",
+                  "message": "Significant negative sentiment detected (score: -0.49)",
+                  "severity": "high"
+                }
+              ]
+            },
+            "analysis": {
+              "sentiment": {
+                "news": {
+                  "overall_sentiment": -0.492,
+                  "sentiment_label": "negative",
+                  "confidence": 0.99,
+                  "article_sentiments": [
+                    {
+                      "title": "Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says",
+                      "sentiment_score": 0.975,
+                      "sentiment_label": "positive",
+                      "confidence": 0.988
+                    },
+                    {
+                      "title": "Why is nudification technology suddenly a major issue?",
+                      "sentiment_score": -0.99,
+                      "sentiment_label": "negative",
+                      "confidence": 0.995
+                    },
+                    {
+                      "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+                      "sentiment_score": -0.99,
+                      "sentiment_label": "negative",
+                      "confidence": 0.995
+                    },
+                    {
+                      "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+                      "sentiment_score": -0.962,
+                      "sentiment_label": "negative",
+                      "confidence": 0.981
+                    }
+                  ],
+                  "total_articles": 4
+                }
+              },
+              "keywords": {
+                "news": {
+                  "technology": 4,
+                  "taiwan": 2,
+                  "richest": 2,
+                  "wealth": 2,
+                  "year": 2,
+                  "nudification": 2,
+                  "sexualised": 2,
+                  "images": 2,
+                  "seoige": 2,
+                  "growth": 1
+                }
+              },
+              "statistics": {
+                "weather": {
+                  "location": "London",
+                  "temperature": 8.89,
+                  "temperature_category": "cold",
+                  "humidity": 91,
+                  "wind_speed": 4.12,
+                  "description": "overcast clouds"
+                }
+              },
+              "insights": [
+                "Analyzed 4 articles with overall negative sentiment (score: -0.49)",
+                "⚠️ Negative sentiment detected - recommend further investigation",
+                "Top trending keyword: 'technology' (mentioned 4 times)",
+                "Weather conditions: cold temperature",
+                "✨ Enhanced LLM analysis included"
+              ],
+              "enhanced_insights": "\n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology suddenly a major issue?: Minister of State Niamh Smyth has written to the Garda Commissioner about the AI chatbot Grok, owned by Elon Musk, and similar apps, which are being used to generate illegal sexualised images of both \n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- The main business trend has been to reduce the use of digital images.\n- The main business trend is to reduce the use of digital images.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device."
+            },
+            "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.492)\n        - Insights: Analyzed 4 articles with overall negative sentiment (score: -0.49)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 4 times)\nWeather conditions: cold temperature\n✨ Enhanced LLM analysis included\n        - Weather: overcast clouds, 8.89°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- We recommend that you do not discuss the information in this section, but simply give it a thought. \n- The objective of this research is to evaluate the impact of investing in the U.S. in a market strategy and evaluate a company's performance. \n- The research team will examine the company's performance and determine the optimal options to achieve its goals. \n- We will also analyze the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's technical and financial performance, including technical feasibility, performance, and risk. \n- The team will look at the company's performance by considering the impact of new products and services, its future prospects, and its prospects for the future. \n- The team will look at the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating what its current and future business and financial performance look like. \nI'm a big fan of R&D. I love it. It's the best way to plan your business. I am also a big fan of R&D, especially when it comes to the financial. I love the opportunity for R&D to help grow our businesses and grow our customers. I love that R&D is being used by more companies than ever before in its use and use. I want to help make that happen.\n- The results of this research will be evaluated through a series of two-stage research that is expected to conclude with a consensus answer to this question. \n- The team will review and analyze the results of this research. \n- The results will be reported and reviewed by the team.\n- When you have reviewed the results, you will be able to make a recommendation to the team as to how these companies can succeed in this market. \n- The team will evaluate the company's performance, and determine the best options to achieve its goals. \n- The team will analyze the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will analyze the company's performance by reviewing the company's performance by reviewing the company's performance"
+          },
+          "report_file": "data\\outputs\\report_20260115_143801.json",
+          "timestamp": "2026-01-15T14:38:01.872132",
+          "summary": "PRIORITY LEVEL: HIGH\n\nDecision: HIGH priority | 1 alert(s) triggered | 4 action(s) recommended | Sentiment: negative (-0.49)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.492)\n        - Insights: Analyzed 4 articles with overall negative sentiment (score: -0.49)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 4 times)\nWeather conditions: cold temperature\n✨ Enhanced LLM analysis included\n        - Weather: overcast clouds, 8.89°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- We recommend that you do not discuss the information in this section, but simply give it a thought. \n- The objective of this research is to evaluate the impact of investing in the U.S. in a market strategy and evaluate a company's performance. \n- The research team will examine the company's performance and determine the optimal options to achieve its goals. \n- We will also analyze the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's technical and financial performance, including technical feasibility, performance, and risk. \n- The team will look at the company's performance by considering the impact of new products and services, its future prospects, and its prospects for the future. \n- The team will look at the company's performance by identifying the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating what its current and future business and financial performance look like. \nI'm a big fan of R&D. I love it. It's the best way to plan your business. I am also a big fan of R&D, especially when it comes to the financial. I love the opportunity for R&D to help grow our businesses and grow our customers. I love that R&D is being used by more companies than ever before in its use and use. I want to help make that happen.\n- The results of this research will be evaluated through a series of two-stage research that is expected to conclude with a consensus answer to this question. \n- The team will review and analyze the results of this research. \n- The results will be reported and reviewed by the team.\n- When you have reviewed the results, you will be able to make a recommendation to the team as to how these companies can succeed in this market. \n- The team will evaluate the company's performance, and determine the best options to achieve its goals. \n- The team will analyze the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will look at the company's performance by evaluating the key factors that are driving the company's results. \n- The team will analyze the company's performance by reviewing the company's performance by reviewing the company's performance\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.49)\nAnalyzed 4 news article(s)\n\nKey Insights:\n  • Analyzed 4 articles with overall negative sentiment (score: -0.49)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'technology' (mentioned 4 times)\n  • Weather conditions: cold temperature\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Why is nudification technology suddenly a major issue?: Minister of State Niamh Smyth has written to the Garda Commissioner about the AI chatbot Grok, owned by Elon Musk, and similar apps, which are being used to generate illegal sexualised images of both \n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- The main business trend has been to reduce the use of digital images.\n- The main business trend is to reduce the use of digital images.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps for the internet.\n- The main business trend has been to increase the use of the mobile apps on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n- The main business trend has been to increase the use of the mobile app on a mobile device.\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [HIGH] Significant negative sentiment detected (score: -0.49)\n\nRecommended Actions:\n  1. Monitor situation closely\n  2. Prepare contingency plans\n  3. Positive trends identified: growth\n  4. Weather conditions normal - no special actions required\n  5. ✨ Strategic AI Advisory generated",
+          "alerts_file": "data\\outputs\\alerts_20260115_143801.json",
+          "alert_count": 1
+        },
+        "validation_results": {
+          "completeness": {
+            "status": "complete"
+          },
+          "consistency": {
+            "priority": "consistent"
+          },
+          "critical_issues": [],
+          "warnings": [],
+          "quality_assurance": {
+            "checks_performed": [
+              "content_check",
+              "metadata_check",
+              "actionability_check",
+              "priority_check"
+            ],
+            "passed": true,
+            "issues": []
+          }
+        },
+        "conflicts_found": [],
+        "supervisor_notes": [
+          "✓ No critical issues found",
+          "✓ Quality assurance checks passed",
+          "✓ Workflow approved for delivery"
+        ],
+        "approval_status": "approved",
+        "supervisor_summary": "Approval Status: APPROVED\n\nSupervisor Notes:\n  • ✓ No critical issues found\n  • ✓ Quality assurance checks passed\n  • ✓ Workflow approved for delivery"
+      }
+    },
+    "status": "completed",
+    "completed_agents": [
+      "DataFetcher",
+      "Analyzer",
+      "DecisionMaker",
+      "Notifier",
+      "Supervisor"
+    ],
+    "failed_agents": [],
+    "start_time": "2026-01-15T14:36:56.166782",
+    "conditional_branch": "heightened_monitoring",
+    "end_time": "2026-01-15T14:38:01.875372",
+    "execution_time": 65.7105941772461
+  }
+}

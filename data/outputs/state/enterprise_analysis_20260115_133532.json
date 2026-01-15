@@ -1,0 +1,470 @@
+{
+  "workflow_name": "enterprise_analysis",
+  "workflow_id": "20260115_133532",
+  "timestamp": "2026-01-15T13:37:39.067017",
+  "state": {
+    "outputs": {
+      "location": "London",
+      "news_query": "AI technology",
+      "raw_data": {
+        "data": {
+          "weather": {
+            "location": "London",
+            "temperature": 15.5,
+            "description": "Partly cloudy",
+            "humidity": 65,
+            "wind_speed": 12.5,
+            "mock": true
+          },
+          "news": {
+            "query": "technology",
+            "articles": [
+              {
+                "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+                "description": "Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.",
+                "content": "Broadcaster Gráinne Seoige has said that sexualised images of her made with deepfake technology have left her deeply traumatised.\r\nShe is calling for action on the availability of such technology to … [+3474 chars]",
+                "source": "RTE",
+                "publishedAt": "2026-01-14T06:00:00Z"
+              },
+              {
+                "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+                "description": "Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it",
+                "content": "Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it also raises questions about the law.\r\nConsi… [+5654 chars]",
+                "source": "Next Big Future",
+                "publishedAt": "2026-01-14T00:34:53Z"
+              }
+            ],
+            "totalResults": 2,
+            "mock": false
+          }
+        },
+        "metadata": {
+          "fetch_time": "2026-01-15T13:35:32.567841",
+          "sources_requested": [
+            "weather",
+            "news"
+          ],
+          "sources_fetched": [
+            "weather",
+            "news"
+          ]
+        }
+      },
+      "analysis_results": {
+        "sentiment": {
+          "news": {
+            "overall_sentiment": -0.976,
+            "sentiment_label": "negative",
+            "confidence": 0.988,
+            "article_sentiments": [
+              {
+                "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+                "sentiment_score": -0.99,
+                "sentiment_label": "negative",
+                "confidence": 0.995
+              },
+              {
+                "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+                "sentiment_score": -0.962,
+                "sentiment_label": "negative",
+                "confidence": 0.981
+              }
+            ],
+            "total_articles": 2
+          }
+        },
+        "keywords": {
+          "news": {
+            "seoige": 2,
+            "technology": 2,
+            "sexualised": 1,
+            "deepfake": 1,
+            "images": 1,
+            "left": 1,
+            "traumatised": 1,
+            "calling": 1,
+            "action": 1,
+            "availability": 1
+          }
+        },
+        "statistics": {
+          "weather": {
+            "location": "London",
+            "temperature": 15.5,
+            "temperature_category": "mild",
+            "humidity": 65,
+            "wind_speed": 12.5,
+            "description": "Partly cloudy"
+          }
+        },
+        "insights": [
+          "Analyzed 2 articles with overall negative sentiment (score: -0.98)",
+          "⚠️ Negative sentiment detected - recommend further investigation",
+          "Top trending keyword: 'seoige' (mentioned 2 times)",
+          "Weather conditions: mild temperature",
+          "✨ Enhanced LLM analysis included"
+        ],
+        "enhanced_insights": "\n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.\n- 7. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the"
+      },
+      "decisions": {
+        "priority": "critical",
+        "actions": [
+          "Immediate review required - critical negative sentiment",
+          "Escalate to management for assessment",
+          "Weather conditions normal - no special actions required",
+          "✨ Strategic AI Advisory generated"
+        ],
+        "alerts": [
+          {
+            "type": "CRITICAL_NEGATIVE_SENTIMENT",
+            "message": "Critical negative sentiment detected (score: -0.98)",
+            "severity": "critical"
+          }
+        ],
+        "decisions": {
+          "sentiment": {
+            "sentiment_score": -0.976,
+            "sentiment_label": "negative",
+            "confidence": 0.988,
+            "priority": "critical",
+            "actions": [
+              "Immediate review required - critical negative sentiment",
+              "Escalate to management for assessment"
+            ],
+            "alerts": [
+              {
+                "type": "CRITICAL_NEGATIVE_SENTIMENT",
+                "message": "Critical negative sentiment detected (score: -0.98)",
+                "severity": "critical"
+              }
+            ]
+          },
+          "keywords": {
+            "top_keywords": {
+              "seoige": 2,
+              "technology": 2,
+              "sexualised": 1,
+              "deepfake": 1,
+              "images": 1,
+              "left": 1,
+              "traumatised": 1,
+              "calling": 1,
+              "action": 1,
+              "availability": 1
+            },
+            "actions": []
+          },
+          "weather": {
+            "temperature_category": "mild",
+            "actions": [
+              "Weather conditions normal - no special actions required"
+            ]
+          }
+        },
+        "summary": "Decision: CRITICAL priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.98)",
+        "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.976)\n        - Insights: Analyzed 2 articles with overall negative sentiment (score: -0.98)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'seoige' (mentioned 2 times)\nWeather conditions: mild temperature\n✨ Enhanced LLM analysis included\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- 1-3 employees a year, 10% less salary and 1% bonus\n- 2-6 employees a year, 30% less salary and 35% bonus\n- 3-12 employees yearly, 30% less salary and 55% bonus\n- 4-10 employees annual, 30% less salary and 40% bonus\n- 5-12 employees yearly, 30% less salary and 50% bonus\n- 6-15 employees yearly, 30% less salary and 60% bonus\n- 7-18 employees yearly, 30% less salary and 60% bonus\n- 9-20 employees annual, 30% less salary and 90% bonus\n- 10-24 employees annual, 30% less salary and 100% bonus\n- 11-26 employees annual, 30% less salary and 110% bonus\n- 12-28 employees annual, 30% less salary and 140% bonus\n- 13-29 employees annual, 30% less salary and 160% bonus\n- 14-31 employees annual, 30% less salary and 180% bonus\n- 15-32 employees annual, 30% less salary and 210% bonus\n- 16-33 employees annual, 30% less salary and 220% bonus\n- 17-34 employees annual, 30% less salary and 240% bonus\n- 18-36 employees annual, 30% less salary and 250% bonus\n- 19-40 employees annual, 30% less salary and 280% bonus\n- 20-42 employees annual, 30% less salary and 290% bonus\n- 21-48 employees annual, 30% less salary and 305% bonus\n- 22-52 employees annual, 30% less salary and 313% bonus\n- 23-56 employees annual, 30% less salary and 340% bonus\n- 24-60 employees annual, 30% less salary and 345% bonus\n- 25-64 employees annual, 30% less salary and 345% bonus\n- 26-77 employees annual, 30% less salary and 352% bonus\n- 27-82 employees annual, 30% less salary and 352% bonus\n- 28-85 employees annual, 30% less salary and 352% bonus\n- 29-105 employees annual, 30% less salary and 352% bonus\n- 30-110 employees annual, 30% less salary and 320% bonus\n- 31-110 employees annual, 30% less salary and 320% bonus\n- 32-120 employees annual, 30% less salary and 320% bonus\n- 33-140 employees annual, 30% less salary and"
+      },
+      "report": {
+        "report": {
+          "metadata": {
+            "generated_at": "2026-01-15T13:37:39.034902",
+            "report_type": "EntraFlow Enterprise Analysis Report",
+            "version": "1.0"
+          },
+          "executive_summary": "PRIORITY LEVEL: CRITICAL\n\nDecision: CRITICAL priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.98)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.976)\n        - Insights: Analyzed 2 articles with overall negative sentiment (score: -0.98)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'seoige' (mentioned 2 times)\nWeather conditions: mild temperature\n✨ Enhanced LLM analysis included\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- 1-3 employees a year, 10% less salary and 1% bonus\n- 2-6 employees a year, 30% less salary and 35% bonus\n- 3-12 employees yearly, 30% less salary and 55% bonus\n- 4-10 employees annual, 30% less salary and 40% bonus\n- 5-12 employees yearly, 30% less salary and 50% bonus\n- 6-15 employees yearly, 30% less salary and 60% bonus\n- 7-18 employees yearly, 30% less salary and 60% bonus\n- 9-20 employees annual, 30% less salary and 90% bonus\n- 10-24 employees annual, 30% less salary and 100% bonus\n- 11-26 employees annual, 30% less salary and 110% bonus\n- 12-28 employees annual, 30% less salary and 140% bonus\n- 13-29 employees annual, 30% less salary and 160% bonus\n- 14-31 employees annual, 30% less salary and 180% bonus\n- 15-32 employees annual, 30% less salary and 210% bonus\n- 16-33 employees annual, 30% less salary and 220% bonus\n- 17-34 employees annual, 30% less salary and 240% bonus\n- 18-36 employees annual, 30% less salary and 250% bonus\n- 19-40 employees annual, 30% less salary and 280% bonus\n- 20-42 employees annual, 30% less salary and 290% bonus\n- 21-48 employees annual, 30% less salary and 305% bonus\n- 22-52 employees annual, 30% less salary and 313% bonus\n- 23-56 employees annual, 30% less salary and 340% bonus\n- 24-60 employees annual, 30% less salary and 345% bonus\n- 25-64 employees annual, 30% less salary and 345% bonus\n- 26-77 employees annual, 30% less salary and 352% bonus\n- 27-82 employees annual, 30% less salary and 352% bonus\n- 28-85 employees annual, 30% less salary and 352% bonus\n- 29-105 employees annual, 30% less salary and 352% bonus\n- 30-110 employees annual, 30% less salary and 320% bonus\n- 31-110 employees annual, 30% less salary and 320% bonus\n- 32-120 employees annual, 30% less salary and 320% bonus\n- 33-140 employees annual, 30% less salary and\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.98)\nAnalyzed 2 news article(s)\n\nKey Insights:\n  • Analyzed 2 articles with overall negative sentiment (score: -0.98)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'seoige' (mentioned 2 times)\n  • Weather conditions: mild temperature\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.\n- 7. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [CRITICAL] Critical negative sentiment detected (score: -0.98)\n\nRecommended Actions:\n  1. Immediate review required - critical negative sentiment\n  2. Escalate to management for assessment\n  3. Weather conditions normal - no special actions required\n  4. ✨ Strategic AI Advisory generated",
+          "priority": "critical",
+          "decisions": {
+            "summary": "Decision: CRITICAL priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.98)",
+            "detailed_decisions": {
+              "sentiment": {
+                "sentiment_score": -0.976,
+                "sentiment_label": "negative",
+                "confidence": 0.988,
+                "priority": "critical",
+                "actions": [
+                  "Immediate review required - critical negative sentiment",
+                  "Escalate to management for assessment"
+                ],
+                "alerts": [
+                  {
+                    "type": "CRITICAL_NEGATIVE_SENTIMENT",
+                    "message": "Critical negative sentiment detected (score: -0.98)",
+                    "severity": "critical"
+                  }
+                ]
+              },
+              "keywords": {
+                "top_keywords": {
+                  "seoige": 2,
+                  "technology": 2,
+                  "sexualised": 1,
+                  "deepfake": 1,
+                  "images": 1,
+                  "left": 1,
+                  "traumatised": 1,
+                  "calling": 1,
+                  "action": 1,
+                  "availability": 1
+                },
+                "actions": []
+              },
+              "weather": {
+                "temperature_category": "mild",
+                "actions": [
+                  "Weather conditions normal - no special actions required"
+                ]
+              }
+            },
+            "recommended_actions": [
+              "Immediate review required - critical negative sentiment",
+              "Escalate to management for assessment",
+              "Weather conditions normal - no special actions required",
+              "✨ Strategic AI Advisory generated"
+            ],
+            "alerts": [
+              {
+                "type": "CRITICAL_NEGATIVE_SENTIMENT",
+                "message": "Critical negative sentiment detected (score: -0.98)",
+                "severity": "critical"
+              }
+            ]
+          },
+          "analysis": {
+            "sentiment": {
+              "news": {
+                "overall_sentiment": -0.976,
+                "sentiment_label": "negative",
+                "confidence": 0.988,
+                "article_sentiments": [
+                  {
+                    "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+                    "sentiment_score": -0.99,
+                    "sentiment_label": "negative",
+                    "confidence": 0.995
+                  },
+                  {
+                    "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+                    "sentiment_score": -0.962,
+                    "sentiment_label": "negative",
+                    "confidence": 0.981
+                  }
+                ],
+                "total_articles": 2
+              }
+            },
+            "keywords": {
+              "news": {
+                "seoige": 2,
+                "technology": 2,
+                "sexualised": 1,
+                "deepfake": 1,
+                "images": 1,
+                "left": 1,
+                "traumatised": 1,
+                "calling": 1,
+                "action": 1,
+                "availability": 1
+              }
+            },
+            "statistics": {
+              "weather": {
+                "location": "London",
+                "temperature": 15.5,
+                "temperature_category": "mild",
+                "humidity": 65,
+                "wind_speed": 12.5,
+                "description": "Partly cloudy"
+              }
+            },
+            "insights": [
+              "Analyzed 2 articles with overall negative sentiment (score: -0.98)",
+              "⚠️ Negative sentiment detected - recommend further investigation",
+              "Top trending keyword: 'seoige' (mentioned 2 times)",
+              "Weather conditions: mild temperature",
+              "✨ Enhanced LLM analysis included"
+            ],
+            "enhanced_insights": "\n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.\n- 7. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the"
+          },
+          "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.976)\n        - Insights: Analyzed 2 articles with overall negative sentiment (score: -0.98)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'seoige' (mentioned 2 times)\nWeather conditions: mild temperature\n✨ Enhanced LLM analysis included\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- 1-3 employees a year, 10% less salary and 1% bonus\n- 2-6 employees a year, 30% less salary and 35% bonus\n- 3-12 employees yearly, 30% less salary and 55% bonus\n- 4-10 employees annual, 30% less salary and 40% bonus\n- 5-12 employees yearly, 30% less salary and 50% bonus\n- 6-15 employees yearly, 30% less salary and 60% bonus\n- 7-18 employees yearly, 30% less salary and 60% bonus\n- 9-20 employees annual, 30% less salary and 90% bonus\n- 10-24 employees annual, 30% less salary and 100% bonus\n- 11-26 employees annual, 30% less salary and 110% bonus\n- 12-28 employees annual, 30% less salary and 140% bonus\n- 13-29 employees annual, 30% less salary and 160% bonus\n- 14-31 employees annual, 30% less salary and 180% bonus\n- 15-32 employees annual, 30% less salary and 210% bonus\n- 16-33 employees annual, 30% less salary and 220% bonus\n- 17-34 employees annual, 30% less salary and 240% bonus\n- 18-36 employees annual, 30% less salary and 250% bonus\n- 19-40 employees annual, 30% less salary and 280% bonus\n- 20-42 employees annual, 30% less salary and 290% bonus\n- 21-48 employees annual, 30% less salary and 305% bonus\n- 22-52 employees annual, 30% less salary and 313% bonus\n- 23-56 employees annual, 30% less salary and 340% bonus\n- 24-60 employees annual, 30% less salary and 345% bonus\n- 25-64 employees annual, 30% less salary and 345% bonus\n- 26-77 employees annual, 30% less salary and 352% bonus\n- 27-82 employees annual, 30% less salary and 352% bonus\n- 28-85 employees annual, 30% less salary and 352% bonus\n- 29-105 employees annual, 30% less salary and 352% bonus\n- 30-110 employees annual, 30% less salary and 320% bonus\n- 31-110 employees annual, 30% less salary and 320% bonus\n- 32-120 employees annual, 30% less salary and 320% bonus\n- 33-140 employees annual, 30% less salary and"
+        },
+        "report_file": "data\\outputs\\report_20260115_133739.json",
+        "timestamp": "2026-01-15T13:37:39.045186",
+        "summary": "PRIORITY LEVEL: CRITICAL\n\nDecision: CRITICAL priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.98)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.976)\n        - Insights: Analyzed 2 articles with overall negative sentiment (score: -0.98)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'seoige' (mentioned 2 times)\nWeather conditions: mild temperature\n✨ Enhanced LLM analysis included\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- 1-3 employees a year, 10% less salary and 1% bonus\n- 2-6 employees a year, 30% less salary and 35% bonus\n- 3-12 employees yearly, 30% less salary and 55% bonus\n- 4-10 employees annual, 30% less salary and 40% bonus\n- 5-12 employees yearly, 30% less salary and 50% bonus\n- 6-15 employees yearly, 30% less salary and 60% bonus\n- 7-18 employees yearly, 30% less salary and 60% bonus\n- 9-20 employees annual, 30% less salary and 90% bonus\n- 10-24 employees annual, 30% less salary and 100% bonus\n- 11-26 employees annual, 30% less salary and 110% bonus\n- 12-28 employees annual, 30% less salary and 140% bonus\n- 13-29 employees annual, 30% less salary and 160% bonus\n- 14-31 employees annual, 30% less salary and 180% bonus\n- 15-32 employees annual, 30% less salary and 210% bonus\n- 16-33 employees annual, 30% less salary and 220% bonus\n- 17-34 employees annual, 30% less salary and 240% bonus\n- 18-36 employees annual, 30% less salary and 250% bonus\n- 19-40 employees annual, 30% less salary and 280% bonus\n- 20-42 employees annual, 30% less salary and 290% bonus\n- 21-48 employees annual, 30% less salary and 305% bonus\n- 22-52 employees annual, 30% less salary and 313% bonus\n- 23-56 employees annual, 30% less salary and 340% bonus\n- 24-60 employees annual, 30% less salary and 345% bonus\n- 25-64 employees annual, 30% less salary and 345% bonus\n- 26-77 employees annual, 30% less salary and 352% bonus\n- 27-82 employees annual, 30% less salary and 352% bonus\n- 28-85 employees annual, 30% less salary and 352% bonus\n- 29-105 employees annual, 30% less salary and 352% bonus\n- 30-110 employees annual, 30% less salary and 320% bonus\n- 31-110 employees annual, 30% less salary and 320% bonus\n- 32-120 employees annual, 30% less salary and 320% bonus\n- 33-140 employees annual, 30% less salary and\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.98)\nAnalyzed 2 news article(s)\n\nKey Insights:\n  • Analyzed 2 articles with overall negative sentiment (score: -0.98)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'seoige' (mentioned 2 times)\n  • Weather conditions: mild temperature\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.\n- 7. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [CRITICAL] Critical negative sentiment detected (score: -0.98)\n\nRecommended Actions:\n  1. Immediate review required - critical negative sentiment\n  2. Escalate to management for assessment\n  3. Weather conditions normal - no special actions required\n  4. ✨ Strategic AI Advisory generated",
+        "alerts_file": "data\\outputs\\alerts_20260115_133739.json",
+        "alert_count": 1
+      },
+      "validated_report": {
+        "validated_report": {
+          "report": {
+            "metadata": {
+              "generated_at": "2026-01-15T13:37:39.034902",
+              "report_type": "EntraFlow Enterprise Analysis Report",
+              "version": "1.0"
+            },
+            "executive_summary": "PRIORITY LEVEL: CRITICAL\n\nDecision: CRITICAL priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.98)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.976)\n        - Insights: Analyzed 2 articles with overall negative sentiment (score: -0.98)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'seoige' (mentioned 2 times)\nWeather conditions: mild temperature\n✨ Enhanced LLM analysis included\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- 1-3 employees a year, 10% less salary and 1% bonus\n- 2-6 employees a year, 30% less salary and 35% bonus\n- 3-12 employees yearly, 30% less salary and 55% bonus\n- 4-10 employees annual, 30% less salary and 40% bonus\n- 5-12 employees yearly, 30% less salary and 50% bonus\n- 6-15 employees yearly, 30% less salary and 60% bonus\n- 7-18 employees yearly, 30% less salary and 60% bonus\n- 9-20 employees annual, 30% less salary and 90% bonus\n- 10-24 employees annual, 30% less salary and 100% bonus\n- 11-26 employees annual, 30% less salary and 110% bonus\n- 12-28 employees annual, 30% less salary and 140% bonus\n- 13-29 employees annual, 30% less salary and 160% bonus\n- 14-31 employees annual, 30% less salary and 180% bonus\n- 15-32 employees annual, 30% less salary and 210% bonus\n- 16-33 employees annual, 30% less salary and 220% bonus\n- 17-34 employees annual, 30% less salary and 240% bonus\n- 18-36 employees annual, 30% less salary and 250% bonus\n- 19-40 employees annual, 30% less salary and 280% bonus\n- 20-42 employees annual, 30% less salary and 290% bonus\n- 21-48 employees annual, 30% less salary and 305% bonus\n- 22-52 employees annual, 30% less salary and 313% bonus\n- 23-56 employees annual, 30% less salary and 340% bonus\n- 24-60 employees annual, 30% less salary and 345% bonus\n- 25-64 employees annual, 30% less salary and 345% bonus\n- 26-77 employees annual, 30% less salary and 352% bonus\n- 27-82 employees annual, 30% less salary and 352% bonus\n- 28-85 employees annual, 30% less salary and 352% bonus\n- 29-105 employees annual, 30% less salary and 352% bonus\n- 30-110 employees annual, 30% less salary and 320% bonus\n- 31-110 employees annual, 30% less salary and 320% bonus\n- 32-120 employees annual, 30% less salary and 320% bonus\n- 33-140 employees annual, 30% less salary and\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.98)\nAnalyzed 2 news article(s)\n\nKey Insights:\n  • Analyzed 2 articles with overall negative sentiment (score: -0.98)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'seoige' (mentioned 2 times)\n  • Weather conditions: mild temperature\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.\n- 7. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [CRITICAL] Critical negative sentiment detected (score: -0.98)\n\nRecommended Actions:\n  1. Immediate review required - critical negative sentiment\n  2. Escalate to management for assessment\n  3. Weather conditions normal - no special actions required\n  4. ✨ Strategic AI Advisory generated",
+            "priority": "critical",
+            "decisions": {
+              "summary": "Decision: CRITICAL priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.98)",
+              "detailed_decisions": {
+                "sentiment": {
+                  "sentiment_score": -0.976,
+                  "sentiment_label": "negative",
+                  "confidence": 0.988,
+                  "priority": "critical",
+                  "actions": [
+                    "Immediate review required - critical negative sentiment",
+                    "Escalate to management for assessment"
+                  ],
+                  "alerts": [
+                    {
+                      "type": "CRITICAL_NEGATIVE_SENTIMENT",
+                      "message": "Critical negative sentiment detected (score: -0.98)",
+                      "severity": "critical"
+                    }
+                  ]
+                },
+                "keywords": {
+                  "top_keywords": {
+                    "seoige": 2,
+                    "technology": 2,
+                    "sexualised": 1,
+                    "deepfake": 1,
+                    "images": 1,
+                    "left": 1,
+                    "traumatised": 1,
+                    "calling": 1,
+                    "action": 1,
+                    "availability": 1
+                  },
+                  "actions": []
+                },
+                "weather": {
+                  "temperature_category": "mild",
+                  "actions": [
+                    "Weather conditions normal - no special actions required"
+                  ]
+                }
+              },
+              "recommended_actions": [
+                "Immediate review required - critical negative sentiment",
+                "Escalate to management for assessment",
+                "Weather conditions normal - no special actions required",
+                "✨ Strategic AI Advisory generated"
+              ],
+              "alerts": [
+                {
+                  "type": "CRITICAL_NEGATIVE_SENTIMENT",
+                  "message": "Critical negative sentiment detected (score: -0.98)",
+                  "severity": "critical"
+                }
+              ]
+            },
+            "analysis": {
+              "sentiment": {
+                "news": {
+                  "overall_sentiment": -0.976,
+                  "sentiment_label": "negative",
+                  "confidence": 0.988,
+                  "article_sentiments": [
+                    {
+                      "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+                      "sentiment_score": -0.99,
+                      "sentiment_label": "negative",
+                      "confidence": 0.995
+                    },
+                    {
+                      "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+                      "sentiment_score": -0.962,
+                      "sentiment_label": "negative",
+                      "confidence": 0.981
+                    }
+                  ],
+                  "total_articles": 2
+                }
+              },
+              "keywords": {
+                "news": {
+                  "seoige": 2,
+                  "technology": 2,
+                  "sexualised": 1,
+                  "deepfake": 1,
+                  "images": 1,
+                  "left": 1,
+                  "traumatised": 1,
+                  "calling": 1,
+                  "action": 1,
+                  "availability": 1
+                }
+              },
+              "statistics": {
+                "weather": {
+                  "location": "London",
+                  "temperature": 15.5,
+                  "temperature_category": "mild",
+                  "humidity": 65,
+                  "wind_speed": 12.5,
+                  "description": "Partly cloudy"
+                }
+              },
+              "insights": [
+                "Analyzed 2 articles with overall negative sentiment (score: -0.98)",
+                "⚠️ Negative sentiment detected - recommend further investigation",
+                "Top trending keyword: 'seoige' (mentioned 2 times)",
+                "Weather conditions: mild temperature",
+                "✨ Enhanced LLM analysis included"
+              ],
+              "enhanced_insights": "\n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.\n- 7. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the"
+            },
+            "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.976)\n        - Insights: Analyzed 2 articles with overall negative sentiment (score: -0.98)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'seoige' (mentioned 2 times)\nWeather conditions: mild temperature\n✨ Enhanced LLM analysis included\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- 1-3 employees a year, 10% less salary and 1% bonus\n- 2-6 employees a year, 30% less salary and 35% bonus\n- 3-12 employees yearly, 30% less salary and 55% bonus\n- 4-10 employees annual, 30% less salary and 40% bonus\n- 5-12 employees yearly, 30% less salary and 50% bonus\n- 6-15 employees yearly, 30% less salary and 60% bonus\n- 7-18 employees yearly, 30% less salary and 60% bonus\n- 9-20 employees annual, 30% less salary and 90% bonus\n- 10-24 employees annual, 30% less salary and 100% bonus\n- 11-26 employees annual, 30% less salary and 110% bonus\n- 12-28 employees annual, 30% less salary and 140% bonus\n- 13-29 employees annual, 30% less salary and 160% bonus\n- 14-31 employees annual, 30% less salary and 180% bonus\n- 15-32 employees annual, 30% less salary and 210% bonus\n- 16-33 employees annual, 30% less salary and 220% bonus\n- 17-34 employees annual, 30% less salary and 240% bonus\n- 18-36 employees annual, 30% less salary and 250% bonus\n- 19-40 employees annual, 30% less salary and 280% bonus\n- 20-42 employees annual, 30% less salary and 290% bonus\n- 21-48 employees annual, 30% less salary and 305% bonus\n- 22-52 employees annual, 30% less salary and 313% bonus\n- 23-56 employees annual, 30% less salary and 340% bonus\n- 24-60 employees annual, 30% less salary and 345% bonus\n- 25-64 employees annual, 30% less salary and 345% bonus\n- 26-77 employees annual, 30% less salary and 352% bonus\n- 27-82 employees annual, 30% less salary and 352% bonus\n- 28-85 employees annual, 30% less salary and 352% bonus\n- 29-105 employees annual, 30% less salary and 352% bonus\n- 30-110 employees annual, 30% less salary and 320% bonus\n- 31-110 employees annual, 30% less salary and 320% bonus\n- 32-120 employees annual, 30% less salary and 320% bonus\n- 33-140 employees annual, 30% less salary and"
+          },
+          "report_file": "data\\outputs\\report_20260115_133739.json",
+          "timestamp": "2026-01-15T13:37:39.045186",
+          "summary": "PRIORITY LEVEL: CRITICAL\n\nDecision: CRITICAL priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.98)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.976)\n        - Insights: Analyzed 2 articles with overall negative sentiment (score: -0.98)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'seoige' (mentioned 2 times)\nWeather conditions: mild temperature\n✨ Enhanced LLM analysis included\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is \n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- 1-3 employees a year, 10% less salary and 1% bonus\n- 2-6 employees a year, 30% less salary and 35% bonus\n- 3-12 employees yearly, 30% less salary and 55% bonus\n- 4-10 employees annual, 30% less salary and 40% bonus\n- 5-12 employees yearly, 30% less salary and 50% bonus\n- 6-15 employees yearly, 30% less salary and 60% bonus\n- 7-18 employees yearly, 30% less salary and 60% bonus\n- 9-20 employees annual, 30% less salary and 90% bonus\n- 10-24 employees annual, 30% less salary and 100% bonus\n- 11-26 employees annual, 30% less salary and 110% bonus\n- 12-28 employees annual, 30% less salary and 140% bonus\n- 13-29 employees annual, 30% less salary and 160% bonus\n- 14-31 employees annual, 30% less salary and 180% bonus\n- 15-32 employees annual, 30% less salary and 210% bonus\n- 16-33 employees annual, 30% less salary and 220% bonus\n- 17-34 employees annual, 30% less salary and 240% bonus\n- 18-36 employees annual, 30% less salary and 250% bonus\n- 19-40 employees annual, 30% less salary and 280% bonus\n- 20-42 employees annual, 30% less salary and 290% bonus\n- 21-48 employees annual, 30% less salary and 305% bonus\n- 22-52 employees annual, 30% less salary and 313% bonus\n- 23-56 employees annual, 30% less salary and 340% bonus\n- 24-60 employees annual, 30% less salary and 345% bonus\n- 25-64 employees annual, 30% less salary and 345% bonus\n- 26-77 employees annual, 30% less salary and 352% bonus\n- 27-82 employees annual, 30% less salary and 352% bonus\n- 28-85 employees annual, 30% less salary and 352% bonus\n- 29-105 employees annual, 30% less salary and 352% bonus\n- 30-110 employees annual, 30% less salary and 320% bonus\n- 31-110 employees annual, 30% less salary and 320% bonus\n- 32-120 employees annual, 30% less salary and 320% bonus\n- 33-140 employees annual, 30% less salary and\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.98)\nAnalyzed 2 news article(s)\n\nKey Insights:\n  • Analyzed 2 articles with overall negative sentiment (score: -0.98)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'seoige' (mentioned 2 times)\n  • Weather conditions: mild temperature\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary:\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.\n- 7. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.\n- 6. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.\n- 5. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the business's current business model\", and that \"the current business model does not provide an easy way to make more money\".\n- 1. The primary business trend.\n- 2. Potential risks for an enterprise.\n- 3. One strategic opportunity.\n- 4. One strategic opportunity.  The article also notes that \"The key to understanding how a business will function is to understand the\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [CRITICAL] Critical negative sentiment detected (score: -0.98)\n\nRecommended Actions:\n  1. Immediate review required - critical negative sentiment\n  2. Escalate to management for assessment\n  3. Weather conditions normal - no special actions required\n  4. ✨ Strategic AI Advisory generated",
+          "alerts_file": "data\\outputs\\alerts_20260115_133739.json",
+          "alert_count": 1
+        },
+        "validation_results": {
+          "completeness": {
+            "status": "complete"
+          },
+          "consistency": {
+            "priority": "consistent"
+          },
+          "critical_issues": [],
+          "warnings": [],
+          "quality_assurance": {
+            "checks_performed": [
+              "content_check",
+              "metadata_check",
+              "actionability_check",
+              "priority_check"
+            ],
+            "passed": true,
+            "issues": []
+          }
+        },
+        "conflicts_found": [],
+        "supervisor_notes": [
+          "✓ No critical issues found",
+          "✓ Quality assurance checks passed",
+          "✓ Workflow approved for delivery"
+        ],
+        "approval_status": "approved",
+        "supervisor_summary": "Approval Status: APPROVED\n\nSupervisor Notes:\n  • ✓ No critical issues found\n  • ✓ Quality assurance checks passed\n  • ✓ Workflow approved for delivery"
+      }
+    },
+    "status": "completed",
+    "completed_agents": [
+      "DataFetcher",
+      "Analyzer",
+      "DecisionMaker",
+      "Notifier",
+      "Supervisor"
+    ],
+    "failed_agents": [],
+    "start_time": "2026-01-15T13:35:32.558795",
+    "conditional_branch": "critical_alert",
+    "end_time": "2026-01-15T13:37:39.054077",
+    "execution_time": 126.50406527519226
+  }
+}

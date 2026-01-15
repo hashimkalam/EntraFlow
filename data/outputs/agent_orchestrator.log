@@ -527,3 +527,607 @@ Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
 2026-01-14 16:37:45 | INFO     | Orchestrator    | Workflow completed successfully in 59.70s
 2026-01-14 16:37:45 | INFO     | Orchestrator    | ================================================================================
 2026-01-14 16:37:45 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260114_163645.json
+2026-01-14 18:05:10 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-14 18:05:27 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-14 18:05:29 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-14 18:05:29 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-14 18:05:42 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-14 18:05:42 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-14 18:05:42 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-14 18:05:42 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-14 18:05:42 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:05:42 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-14 18:05:42 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:05:42 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-14 18:05:42 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-14 18:05:42 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-14 18:05:42 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-14 18:05:42 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-14 18:05:42 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-14 18:05:42 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:05:42 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-14 18:05:42 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:05:42 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-14 18:05:42 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-14 18:05:42 | WARNING  | DataFetcher     | No OpenWeatherMap API key found, using mock data
+2026-01-14 18:05:42 | INFO     | DataFetcher     | Successfully fetched weather data for London
+2026-01-14 18:05:42 | WARNING  | DataFetcher     | No NewsAPI key found, using mock data
+2026-01-14 18:05:42 | INFO     | DataFetcher     | Successfully fetched 3 news articles
+2026-01-14 18:05:42 | INFO     | DataFetcher     | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-14 18:05:42 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:05:42 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-14 18:05:42 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:05:42 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-14 18:05:42 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-14 18:05:42 | INFO     | Analyzer        | Analyzing news articles...
+2026-01-14 18:05:43 | INFO     | Analyzer        | Analyzing weather data...
+2026-01-14 18:06:39 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-14 18:06:39 | INFO     | Analyzer        | Execution completed successfully in 56.54s (attempt 1/4)
+2026-01-14 18:06:39 | INFO     | Orchestrator    | Conditional check: sentiment=positive (score=0.44)
+2026-01-14 18:06:39 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:06:39 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-14 18:06:39 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:06:39 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-14 18:06:39 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-14 18:06:39 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-14 18:08:02 | INFO     | DecisionMaker   | Decision complete: Priority=low, Actions=3, Alerts=0
+2026-01-14 18:08:02 | INFO     | DecisionMaker   | Execution completed successfully in 83.25s (attempt 1/4)
+2026-01-14 18:08:02 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:08:02 | INFO     | Orchestrator    | Executing Level 4/5
+2026-01-14 18:08:02 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:08:02 | INFO     | Orchestrator    | Executing agent: Notifier
+2026-01-14 18:08:02 | INFO     | Notifier        | Starting execution with inputs: ['decisions', 'analysis_results']
+2026-01-14 18:08:02 | INFO     | Notifier        | Generating reports and notifications...
+2026-01-14 18:08:02 | INFO     | Notifier        | Report generated successfully: data\outputs\report_20260114_180802.json
+2026-01-14 18:08:02 | INFO     | Notifier        | Execution completed successfully in 0.01s (attempt 1/4)
+2026-01-14 18:08:02 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:08:02 | INFO     | Orchestrator    | Executing Level 5/5
+2026-01-14 18:08:02 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:08:02 | INFO     | Orchestrator    | Executing agent: Supervisor
+2026-01-14 18:08:02 | INFO     | Supervisor      | Starting execution with inputs: ['report', 'decisions']
+2026-01-14 18:08:02 | INFO     | Supervisor      | Starting supervision and validation...
+2026-01-14 18:08:02 | INFO     | Supervisor      | Supervision complete: Status=approved
+2026-01-14 18:08:02 | INFO     | Supervisor      | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-14 18:08:02 | INFO     | Orchestrator    | 
+================================================================================
+2026-01-14 18:08:02 | INFO     | Orchestrator    | Workflow completed successfully in 139.84s
+2026-01-14 18:08:02 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:08:02 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260114_180542.json
+2026-01-14 18:12:34 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-14 18:13:14 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-14 18:13:17 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-14 18:13:17 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-14 18:13:21 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-14 18:13:21 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-14 18:13:21 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-14 18:13:21 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-14 18:13:21 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:13:21 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-14 18:13:21 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:13:21 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-14 18:13:21 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-14 18:13:21 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-14 18:13:21 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-14 18:13:21 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-14 18:13:21 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-14 18:13:21 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:13:21 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-14 18:13:21 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:13:21 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-14 18:13:21 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-14 18:13:23 | ERROR    | DataFetcher     | Failed to fetch weather data: [DataFetcher] API call to OpenWeatherMap failed: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?q=London&appid=your_openweather_key_here&units=metric
+2026-01-14 18:13:26 | INFO     | DataFetcher     | Successfully fetched 1 news articles
+2026-01-14 18:13:26 | INFO     | DataFetcher     | Execution completed successfully in 5.43s (attempt 1/4)
+2026-01-14 18:13:26 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:13:26 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-14 18:13:26 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:13:26 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-14 18:13:26 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-14 18:13:26 | INFO     | Analyzer        | Analyzing news articles...
+2026-01-14 18:14:58 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-14 18:14:58 | INFO     | Analyzer        | Execution completed successfully in 91.55s (attempt 1/4)
+2026-01-14 18:14:58 | INFO     | Orchestrator    | Conditional check: sentiment=positive (score=1.00)
+2026-01-14 18:14:58 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:14:58 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-14 18:14:58 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:14:58 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-14 18:14:58 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-14 18:14:58 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-14 18:15:01 | INFO     | DecisionMaker   | Decision complete: Priority=low, Actions=2, Alerts=0
+2026-01-14 18:15:01 | INFO     | DecisionMaker   | Execution completed successfully in 2.86s (attempt 1/4)
+2026-01-14 18:15:01 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:15:01 | INFO     | Orchestrator    | Executing Level 4/5
+2026-01-14 18:15:01 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:15:01 | INFO     | Orchestrator    | Executing agent: Notifier
+2026-01-14 18:15:01 | INFO     | Notifier        | Starting execution with inputs: ['decisions', 'analysis_results']
+2026-01-14 18:15:01 | INFO     | Notifier        | Generating reports and notifications...
+2026-01-14 18:15:01 | INFO     | Notifier        | Report generated successfully: data\outputs\report_20260114_181501.json
+2026-01-14 18:15:01 | INFO     | Notifier        | Execution completed successfully in 0.01s (attempt 1/4)
+2026-01-14 18:15:01 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:15:01 | INFO     | Orchestrator    | Executing Level 5/5
+2026-01-14 18:15:01 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:15:01 | INFO     | Orchestrator    | Executing agent: Supervisor
+2026-01-14 18:15:01 | INFO     | Supervisor      | Starting execution with inputs: ['report', 'decisions']
+2026-01-14 18:15:01 | INFO     | Supervisor      | Starting supervision and validation...
+2026-01-14 18:15:01 | INFO     | Supervisor      | Supervision complete: Status=approved
+2026-01-14 18:15:01 | INFO     | Supervisor      | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-14 18:15:01 | INFO     | Orchestrator    | 
+================================================================================
+2026-01-14 18:15:01 | INFO     | Orchestrator    | Workflow completed successfully in 99.89s
+2026-01-14 18:15:01 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:15:01 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260114_181321.json
+2026-01-14 18:15:45 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-14 18:16:11 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-14 18:16:13 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-14 18:16:13 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-14 18:16:16 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-14 18:16:16 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-14 18:16:16 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-14 18:16:16 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-14 18:16:16 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:16:16 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-14 18:16:16 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:16:16 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-14 18:16:16 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-14 18:16:16 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-14 18:16:16 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-14 18:16:16 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-14 18:16:16 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-14 18:16:16 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:16:16 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-14 18:16:16 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:16:16 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-14 18:16:16 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-14 18:16:21 | ERROR    | DataFetcher     | Failed to fetch weather data: [DataFetcher] API call to OpenWeatherMap failed: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?q=London&appid=your_openweather_key_here&units=metric
+2026-01-14 18:16:27 | INFO     | DataFetcher     | Successfully fetched 1 news articles
+2026-01-14 18:16:27 | INFO     | DataFetcher     | Execution completed successfully in 11.16s (attempt 1/4)
+2026-01-14 18:16:27 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:16:27 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-14 18:16:27 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:16:27 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-14 18:16:27 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-14 18:16:27 | INFO     | Analyzer        | Analyzing news articles...
+2026-01-14 18:17:58 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-14 18:17:58 | INFO     | Analyzer        | Execution completed successfully in 90.76s (attempt 1/4)
+2026-01-14 18:17:58 | INFO     | Orchestrator    | Conditional check: sentiment=positive (score=1.00)
+2026-01-14 18:17:58 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:17:58 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-14 18:17:58 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:17:58 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-14 18:17:58 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-14 18:17:58 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-14 18:19:39 | INFO     | DecisionMaker   | Decision complete: Priority=low, Actions=2, Alerts=0
+2026-01-14 18:19:39 | INFO     | DecisionMaker   | Execution completed successfully in 101.26s (attempt 1/4)
+2026-01-14 18:19:39 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:19:39 | INFO     | Orchestrator    | Executing Level 4/5
+2026-01-14 18:19:39 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:19:39 | INFO     | Orchestrator    | Executing agent: Notifier
+2026-01-14 18:19:39 | INFO     | Notifier        | Starting execution with inputs: ['decisions', 'analysis_results']
+2026-01-14 18:19:39 | INFO     | Notifier        | Generating reports and notifications...
+2026-01-14 18:19:39 | INFO     | Notifier        | Report generated successfully: data\outputs\report_20260114_181939.json
+2026-01-14 18:19:39 | INFO     | Notifier        | Execution completed successfully in 0.01s (attempt 1/4)
+2026-01-14 18:19:39 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:19:39 | INFO     | Orchestrator    | Executing Level 5/5
+2026-01-14 18:19:39 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:19:39 | INFO     | Orchestrator    | Executing agent: Supervisor
+2026-01-14 18:19:39 | INFO     | Supervisor      | Starting execution with inputs: ['report', 'decisions']
+2026-01-14 18:19:39 | INFO     | Supervisor      | Starting supervision and validation...
+2026-01-14 18:19:39 | INFO     | Supervisor      | Supervision complete: Status=approved
+2026-01-14 18:19:39 | INFO     | Supervisor      | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-14 18:19:39 | INFO     | Orchestrator    | 
+================================================================================
+2026-01-14 18:19:39 | INFO     | Orchestrator    | Workflow completed successfully in 203.24s
+2026-01-14 18:19:39 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:19:39 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260114_181616.json
+2026-01-14 18:26:04 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-14 18:26:12 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-14 18:26:14 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-14 18:26:14 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-14 18:26:17 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-14 18:26:17 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-14 18:26:17 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-14 18:26:17 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-14 18:26:17 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:26:17 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-14 18:26:17 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:26:17 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-14 18:26:17 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-14 18:26:17 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-14 18:26:17 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-14 18:26:17 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-14 18:26:17 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-14 18:26:17 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:26:17 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-14 18:26:17 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:26:17 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-14 18:26:17 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-14 18:26:17 | WARNING  | DataFetcher     | No OpenWeatherMap API key found (or placeholder detected), using mock data
+2026-01-14 18:26:17 | INFO     | DataFetcher     | Successfully fetched weather data for London
+2026-01-14 18:26:19 | INFO     | DataFetcher     | Successfully fetched 0 news articles
+2026-01-14 18:26:19 | INFO     | DataFetcher     | Execution completed successfully in 1.66s (attempt 1/4)
+2026-01-14 18:26:19 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:26:19 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-14 18:26:19 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:26:19 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-14 18:26:19 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-14 18:26:19 | INFO     | Analyzer        | Analyzing weather data...
+2026-01-14 18:26:19 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-14 18:26:19 | INFO     | Analyzer        | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-14 18:26:19 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:26:19 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-14 18:26:19 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:26:19 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-14 18:26:19 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-14 18:26:19 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-14 18:26:49 | INFO     | DecisionMaker   | Decision complete: Priority=medium, Actions=2, Alerts=0
+2026-01-14 18:26:49 | INFO     | DecisionMaker   | Execution completed successfully in 30.69s (attempt 1/4)
+2026-01-14 18:26:49 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:26:49 | INFO     | Orchestrator    | Executing Level 4/5
+2026-01-14 18:26:49 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:26:49 | INFO     | Orchestrator    | Executing agent: Notifier
+2026-01-14 18:26:49 | INFO     | Notifier        | Starting execution with inputs: ['decisions', 'analysis_results']
+2026-01-14 18:26:49 | INFO     | Notifier        | Generating reports and notifications...
+2026-01-14 18:26:49 | INFO     | Notifier        | Report generated successfully: data\outputs\report_20260114_182649.json
+2026-01-14 18:26:49 | INFO     | Notifier        | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-14 18:26:49 | INFO     | Orchestrator    | 
+============================================================
+2026-01-14 18:26:49 | INFO     | Orchestrator    | Executing Level 5/5
+2026-01-14 18:26:49 | INFO     | Orchestrator    | ============================================================
+2026-01-14 18:26:49 | INFO     | Orchestrator    | Executing agent: Supervisor
+2026-01-14 18:26:49 | INFO     | Supervisor      | Starting execution with inputs: ['report', 'decisions']
+2026-01-14 18:26:49 | INFO     | Supervisor      | Starting supervision and validation...
+2026-01-14 18:26:49 | INFO     | Supervisor      | Supervision complete: Status=approved
+2026-01-14 18:26:49 | INFO     | Supervisor      | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-14 18:26:49 | INFO     | Orchestrator    | 
+================================================================================
+2026-01-14 18:26:49 | INFO     | Orchestrator    | Workflow completed successfully in 32.35s
+2026-01-14 18:26:49 | INFO     | Orchestrator    | ================================================================================
+2026-01-14 18:26:49 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260114_182617.json
+2026-01-15 13:35:05 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 13:35:27 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-15 13:35:29 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-15 13:35:29 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 13:35:32 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-15 13:35:32 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-15 13:35:32 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-15 13:35:32 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-15 13:35:32 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 13:35:32 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-15 13:35:32 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 13:35:32 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-15 13:35:32 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-15 13:35:32 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-15 13:35:32 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-15 13:35:32 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-15 13:35:32 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-15 13:35:32 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 13:35:32 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-15 13:35:32 | INFO     | Orchestrator    | ============================================================
+2026-01-15 13:35:32 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-15 13:35:32 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-15 13:35:32 | WARNING  | DataFetcher     | No OpenWeatherMap API key found (or placeholder detected), using mock data
+2026-01-15 13:35:32 | INFO     | DataFetcher     | Successfully fetched weather data for London
+2026-01-15 13:35:35 | INFO     | DataFetcher     | Successfully fetched 2 news articles
+2026-01-15 13:35:35 | INFO     | DataFetcher     | Execution completed successfully in 2.44s (attempt 1/4)
+2026-01-15 13:35:35 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 13:35:35 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-15 13:35:35 | INFO     | Orchestrator    | ============================================================
+2026-01-15 13:35:35 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-15 13:35:35 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-15 13:35:35 | INFO     | Analyzer        | Analyzing news articles...
+2026-01-15 13:35:35 | INFO     | Analyzer        | Analyzing weather data...
+2026-01-15 13:36:27 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-15 13:36:27 | INFO     | Analyzer        | Execution completed successfully in 52.31s (attempt 1/4)
+2026-01-15 13:36:27 | INFO     | Orchestrator    | Conditional check: sentiment=negative (score=-0.98)
+2026-01-15 13:36:27 | WARNING  | Orchestrator    | ⚠️  CRITICAL negative sentiment detected - triggering alert workflow
+2026-01-15 13:36:27 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 13:36:27 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-15 13:36:27 | INFO     | Orchestrator    | ============================================================
+2026-01-15 13:36:27 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-15 13:36:27 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-15 13:36:27 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-15 13:37:39 | INFO     | DecisionMaker   | Decision complete: Priority=critical, Actions=4, Alerts=1
+2026-01-15 13:37:39 | INFO     | DecisionMaker   | Execution completed successfully in 71.69s (attempt 1/4)
+2026-01-15 13:37:39 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 13:37:39 | INFO     | Orchestrator    | Executing Level 4/5
+2026-01-15 13:37:39 | INFO     | Orchestrator    | ============================================================
+2026-01-15 13:37:39 | INFO     | Orchestrator    | Executing agent: Notifier
+2026-01-15 13:37:39 | INFO     | Notifier        | Starting execution with inputs: ['decisions', 'analysis_results']
+2026-01-15 13:37:39 | INFO     | Notifier        | Generating reports and notifications...
+2026-01-15 13:37:39 | WARNING  | Notifier        | Generated 1 alert(s)
+2026-01-15 13:37:39 | INFO     | Notifier        | Report generated successfully: data\outputs\report_20260115_133739.json
+2026-01-15 13:37:39 | INFO     | Notifier        | Execution completed successfully in 0.02s (attempt 1/4)
+2026-01-15 13:37:39 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 13:37:39 | INFO     | Orchestrator    | Executing Level 5/5
+2026-01-15 13:37:39 | INFO     | Orchestrator    | ============================================================
+2026-01-15 13:37:39 | INFO     | Orchestrator    | Executing agent: Supervisor
+2026-01-15 13:37:39 | INFO     | Supervisor      | Starting execution with inputs: ['report', 'decisions']
+2026-01-15 13:37:39 | INFO     | Supervisor      | Starting supervision and validation...
+2026-01-15 13:37:39 | INFO     | Supervisor      | Supervision complete: Status=approved
+2026-01-15 13:37:39 | INFO     | Supervisor      | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-15 13:37:39 | INFO     | Orchestrator    | 
+================================================================================
+2026-01-15 13:37:39 | INFO     | Orchestrator    | Workflow completed successfully in 126.50s
+2026-01-15 13:37:39 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 13:37:39 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260115_133532.json
+2026-01-15 14:03:45 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 14:03:50 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-15 14:03:52 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-15 14:03:52 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 14:03:54 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-15 14:03:54 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-15 14:03:54 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-15 14:03:54 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-15 14:03:54 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:03:54 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-15 14:03:54 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:03:54 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-15 14:03:54 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-15 14:03:54 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-15 14:03:54 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-15 14:03:54 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-15 14:03:54 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-15 14:03:54 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:03:54 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-15 14:03:54 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:03:54 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-15 14:03:54 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-15 14:03:54 | WARNING  | DataFetcher     | No OpenWeatherMap API key found (or placeholder detected), using mock data
+2026-01-15 14:03:54 | INFO     | DataFetcher     | Successfully fetched weather data for London
+2026-01-15 14:03:56 | INFO     | DataFetcher     | Successfully fetched 2 news articles
+2026-01-15 14:03:56 | INFO     | DataFetcher     | Execution completed successfully in 2.19s (attempt 1/4)
+2026-01-15 14:03:56 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:03:56 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-15 14:03:56 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:03:56 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-15 14:03:56 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-15 14:03:56 | INFO     | Analyzer        | Analyzing news articles...
+2026-01-15 14:03:57 | INFO     | Analyzer        | Analyzing weather data...
+2026-01-15 14:04:26 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-15 14:04:26 | INFO     | Analyzer        | Execution completed successfully in 29.74s (attempt 1/4)
+2026-01-15 14:04:26 | INFO     | Orchestrator    | Conditional check: sentiment=negative (score=-0.98)
+2026-01-15 14:04:26 | WARNING  | Orchestrator    | ⚠️  CRITICAL negative sentiment detected - triggering alert workflow
+2026-01-15 14:04:26 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:04:26 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-15 14:04:26 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:04:26 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-15 14:04:26 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-15 14:04:26 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-15 14:04:57 | INFO     | DecisionMaker   | Decision complete: Priority=critical, Actions=4, Alerts=1
+2026-01-15 14:04:57 | INFO     | DecisionMaker   | Execution completed successfully in 30.66s (attempt 1/4)
+2026-01-15 14:04:57 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:04:57 | INFO     | Orchestrator    | Executing Level 4/5
+2026-01-15 14:04:57 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:04:57 | INFO     | Orchestrator    | Executing agent: Notifier
+2026-01-15 14:04:57 | INFO     | Notifier        | Starting execution with inputs: ['decisions', 'analysis_results']
+2026-01-15 14:04:57 | INFO     | Notifier        | Generating reports and notifications...
+2026-01-15 14:04:57 | WARNING  | Notifier        | Generated 1 alert(s)
+2026-01-15 14:04:57 | INFO     | Notifier        | Report generated successfully: data\outputs\report_20260115_140457.json
+2026-01-15 14:04:57 | INFO     | Notifier        | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-15 14:04:57 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:04:57 | INFO     | Orchestrator    | Executing Level 5/5
+2026-01-15 14:04:57 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:04:57 | INFO     | Orchestrator    | Executing agent: Supervisor
+2026-01-15 14:04:57 | INFO     | Supervisor      | Starting execution with inputs: ['report', 'decisions']
+2026-01-15 14:04:57 | INFO     | Supervisor      | Starting supervision and validation...
+2026-01-15 14:04:57 | INFO     | Supervisor      | Supervision complete: Status=approved
+2026-01-15 14:04:57 | INFO     | Supervisor      | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-15 14:04:57 | INFO     | Orchestrator    | 
+================================================================================
+2026-01-15 14:04:57 | INFO     | Orchestrator    | Workflow completed successfully in 62.60s
+2026-01-15 14:04:57 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:04:57 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260115_140354.json
+2026-01-15 14:22:53 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 14:23:16 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-15 14:23:19 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-15 14:23:19 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 14:23:22 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-15 14:23:22 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-15 14:23:22 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-15 14:23:22 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-15 14:23:22 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:23:22 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-15 14:23:22 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:23:22 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-15 14:23:22 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-15 14:23:22 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-15 14:23:22 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-15 14:23:22 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-15 14:23:22 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-15 14:23:22 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:23:22 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-15 14:23:22 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:23:22 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-15 14:23:22 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-15 14:23:23 | ERROR    | DataFetcher     | Failed to fetch weather data: [DataFetcher] API call to OpenWeatherMap failed: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?q=London&appid=08cb2aad62107fdb5f88e1e64a54b46d&units=metric
+2026-01-15 14:23:27 | INFO     | DataFetcher     | Successfully fetched 3 news articles
+2026-01-15 14:23:27 | INFO     | DataFetcher     | Execution completed successfully in 5.40s (attempt 1/4)
+2026-01-15 14:23:27 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:23:27 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-15 14:23:27 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:23:27 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-15 14:23:27 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-15 14:23:27 | INFO     | Analyzer        | Analyzing news articles...
+2026-01-15 14:23:56 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-15 14:23:56 | INFO     | Analyzer        | Execution completed successfully in 29.20s (attempt 1/4)
+2026-01-15 14:23:56 | INFO     | Orchestrator    | Conditional check: sentiment=negative (score=-0.33)
+2026-01-15 14:23:56 | WARNING  | Orchestrator    | ⚠️  Negative sentiment detected - heightened monitoring
+2026-01-15 14:23:56 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:23:56 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-15 14:23:56 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:23:56 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-15 14:23:56 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-15 14:23:56 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-15 14:25:45 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 14:25:53 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-15 14:25:58 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-15 14:25:58 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 14:26:07 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-15 14:26:07 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-15 14:26:07 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-15 14:26:07 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-15 14:26:07 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:26:07 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-15 14:26:07 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:26:07 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-15 14:26:07 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-15 14:26:07 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-15 14:26:07 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-15 14:26:07 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-15 14:26:07 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-15 14:26:07 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:26:07 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-15 14:26:07 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:26:07 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-15 14:26:07 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-15 14:26:09 | ERROR    | DataFetcher     | Failed to fetch weather data: [DataFetcher] API call to OpenWeatherMap failed: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?q=London&appid=08cb2aad62107fdb5f88e1e64a54b46d&units=metric
+2026-01-15 14:26:13 | INFO     | DataFetcher     | Successfully fetched 3 news articles
+2026-01-15 14:26:13 | INFO     | DataFetcher     | Execution completed successfully in 6.45s (attempt 1/4)
+2026-01-15 14:26:13 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:26:13 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-15 14:26:13 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:26:13 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-15 14:26:13 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-15 14:26:13 | INFO     | Analyzer        | Analyzing news articles...
+2026-01-15 14:26:44 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-15 14:26:44 | INFO     | Analyzer        | Execution completed successfully in 30.97s (attempt 1/4)
+2026-01-15 14:26:44 | INFO     | Orchestrator    | Conditional check: sentiment=negative (score=-0.33)
+2026-01-15 14:26:44 | WARNING  | Orchestrator    | ⚠️  Negative sentiment detected - heightened monitoring
+2026-01-15 14:26:44 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:26:44 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-15 14:26:44 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:26:44 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-15 14:26:44 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-15 14:26:44 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-15 14:27:32 | INFO     | DecisionMaker   | Decision complete: Priority=high, Actions=4, Alerts=1
+2026-01-15 14:27:32 | INFO     | DecisionMaker   | Execution completed successfully in 47.74s (attempt 1/4)
+2026-01-15 14:27:32 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:27:32 | INFO     | Orchestrator    | Executing Level 4/5
+2026-01-15 14:27:32 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:27:32 | INFO     | Orchestrator    | Executing agent: Notifier
+2026-01-15 14:27:32 | INFO     | Notifier        | Starting execution with inputs: ['decisions', 'analysis_results']
+2026-01-15 14:27:32 | INFO     | Notifier        | Generating reports and notifications...
+2026-01-15 14:27:32 | WARNING  | Notifier        | Generated 1 alert(s)
+2026-01-15 14:27:32 | INFO     | Notifier        | Report generated successfully: data\outputs\report_20260115_142732.json
+2026-01-15 14:27:32 | INFO     | Notifier        | Execution completed successfully in 0.01s (attempt 1/4)
+2026-01-15 14:27:32 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:27:32 | INFO     | Orchestrator    | Executing Level 5/5
+2026-01-15 14:27:32 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:27:32 | INFO     | Orchestrator    | Executing agent: Supervisor
+2026-01-15 14:27:32 | INFO     | Supervisor      | Starting execution with inputs: ['report', 'decisions']
+2026-01-15 14:27:32 | INFO     | Supervisor      | Starting supervision and validation...
+2026-01-15 14:27:32 | INFO     | Supervisor      | Supervision complete: Status=approved
+2026-01-15 14:27:32 | INFO     | Supervisor      | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-15 14:27:32 | INFO     | Orchestrator    | 
+================================================================================
+2026-01-15 14:27:32 | INFO     | Orchestrator    | Workflow completed successfully in 85.20s
+2026-01-15 14:27:32 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:27:32 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260115_142607.json
+2026-01-15 14:36:46 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 14:36:51 | INFO     | Analyzer        | Loading sentiment analysis model: distilbert-base-uncased-finetuned-sst-2-english
+2026-01-15 14:36:53 | INFO     | Analyzer        | ML models loaded successfully
+2026-01-15 14:36:53 | INFO     | LLMUtils        | Initializing LLM provider: huggingface (model: openai-community/gpt2)
+2026-01-15 14:36:56 | INFO     | Orchestrator    | Initialized 5 agents: ['DataFetcher', 'Analyzer', 'DecisionMaker', 'Notifier', 'Supervisor']
+2026-01-15 14:36:56 | INFO     | WorkflowManager | Registered workflow 'enterprise_analysis' with 5 steps
+2026-01-15 14:36:56 | INFO     | WorkflowManager | Registered workflow 'quick_sentiment_check' with 3 steps
+2026-01-15 14:36:56 | INFO     | Orchestrator    | Orchestrator initialized successfully
+2026-01-15 14:36:56 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:36:56 | INFO     | Orchestrator    | Starting workflow: enterprise_analysis
+2026-01-15 14:36:56 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:36:56 | INFO     | Orchestrator    | Execution plan: 5 level(s)
+2026-01-15 14:36:56 | INFO     | Orchestrator    |   Level 1: DataFetcher
+2026-01-15 14:36:56 | INFO     | Orchestrator    |   Level 2: Analyzer
+2026-01-15 14:36:56 | INFO     | Orchestrator    |   Level 3: DecisionMaker
+2026-01-15 14:36:56 | INFO     | Orchestrator    |   Level 4: Notifier
+2026-01-15 14:36:56 | INFO     | Orchestrator    |   Level 5: Supervisor
+2026-01-15 14:36:56 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:36:56 | INFO     | Orchestrator    | Executing Level 1/5
+2026-01-15 14:36:56 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:36:56 | INFO     | Orchestrator    | Executing agent: DataFetcher
+2026-01-15 14:36:56 | INFO     | DataFetcher     | Starting execution with inputs: []
+2026-01-15 14:36:56 | INFO     | DataFetcher     | Successfully fetched weather data for London
+2026-01-15 14:36:58 | INFO     | DataFetcher     | Successfully fetched 4 news articles
+2026-01-15 14:36:58 | INFO     | DataFetcher     | Execution completed successfully in 2.24s (attempt 1/4)
+2026-01-15 14:36:58 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:36:58 | INFO     | Orchestrator    | Executing Level 2/5
+2026-01-15 14:36:58 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:36:58 | INFO     | Orchestrator    | Executing agent: Analyzer
+2026-01-15 14:36:58 | INFO     | Analyzer        | Starting execution with inputs: ['raw_data']
+2026-01-15 14:36:58 | INFO     | Analyzer        | Analyzing news articles...
+2026-01-15 14:36:58 | INFO     | Analyzer        | Analyzing weather data...
+2026-01-15 14:37:30 | INFO     | Analyzer        | Analysis completed successfully
+2026-01-15 14:37:30 | INFO     | Analyzer        | Execution completed successfully in 31.73s (attempt 1/4)
+2026-01-15 14:37:30 | INFO     | Orchestrator    | Conditional check: sentiment=negative (score=-0.49)
+2026-01-15 14:37:30 | WARNING  | Orchestrator    | ⚠️  Negative sentiment detected - heightened monitoring
+2026-01-15 14:37:30 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:37:30 | INFO     | Orchestrator    | Executing Level 3/5
+2026-01-15 14:37:30 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:37:30 | INFO     | Orchestrator    | Executing agent: DecisionMaker
+2026-01-15 14:37:30 | INFO     | DecisionMaker   | Starting execution with inputs: ['analysis_results']
+2026-01-15 14:37:30 | INFO     | DecisionMaker   | Making decisions based on analysis results...
+2026-01-15 14:38:01 | INFO     | DecisionMaker   | Decision complete: Priority=high, Actions=5, Alerts=1
+2026-01-15 14:38:01 | INFO     | DecisionMaker   | Execution completed successfully in 31.73s (attempt 1/4)
+2026-01-15 14:38:01 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:38:01 | INFO     | Orchestrator    | Executing Level 4/5
+2026-01-15 14:38:01 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:38:01 | INFO     | Orchestrator    | Executing agent: Notifier
+2026-01-15 14:38:01 | INFO     | Notifier        | Starting execution with inputs: ['decisions', 'analysis_results']
+2026-01-15 14:38:01 | INFO     | Notifier        | Generating reports and notifications...
+2026-01-15 14:38:01 | WARNING  | Notifier        | Generated 1 alert(s)
+2026-01-15 14:38:01 | INFO     | Notifier        | Report generated successfully: data\outputs\report_20260115_143801.json
+2026-01-15 14:38:01 | INFO     | Notifier        | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-15 14:38:01 | INFO     | Orchestrator    | 
+============================================================
+2026-01-15 14:38:01 | INFO     | Orchestrator    | Executing Level 5/5
+2026-01-15 14:38:01 | INFO     | Orchestrator    | ============================================================
+2026-01-15 14:38:01 | INFO     | Orchestrator    | Executing agent: Supervisor
+2026-01-15 14:38:01 | INFO     | Supervisor      | Starting execution with inputs: ['report', 'decisions']
+2026-01-15 14:38:01 | INFO     | Supervisor      | Starting supervision and validation...
+2026-01-15 14:38:01 | INFO     | Supervisor      | Supervision complete: Status=approved
+2026-01-15 14:38:01 | INFO     | Supervisor      | Execution completed successfully in 0.00s (attempt 1/4)
+2026-01-15 14:38:01 | INFO     | Orchestrator    | 
+================================================================================
+2026-01-15 14:38:01 | INFO     | Orchestrator    | Workflow completed successfully in 65.71s
+2026-01-15 14:38:01 | INFO     | Orchestrator    | ================================================================================
+2026-01-15 14:38:01 | INFO     | StateManager    | State saved: data\outputs\state\enterprise_analysis_20260115_143656.json

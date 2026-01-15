@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-15T14:27:32.338662",
+    "report_type": "EntraFlow Enterprise Analysis Report",
+    "version": "1.0"
+  },
+  "executive_summary": "PRIORITY LEVEL: HIGH\n\nDecision: HIGH priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.33)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.326)\n        - Insights: Analyzed 3 articles with overall negative sentiment (score: -0.33)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 3 times)\n✨ Enhanced LLM analysis included\n        - Weather: clear, 20°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Gráinne Seoige: Sexualised deep\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- Establish a strategy that will help you maximize your profits in the future.\n- Build on your operational experience, and improve by performing your own research\n- Understand the need to identify and remove any \"skeletons\" from your company.\n- Evaluate the company's potential future growth prospects and plan to use your expertise to achieve these objectives\n- Understand the need to keep the company in line with the needs of the global population, and to make sure it works for everyone in the future. \n- Make smart decisions about where to invest.\n- Analyze the business for potential weaknesses, and then use your knowledge to design and execute effective strategies to address these weaknesses\n- Plan and execute on your current plans\n- Understand and implement the company's most innovative technology offerings and products\n- Take a step back from a project and evaluate your needs and make choices based on their effectiveness\n- Plan and execute on their latest product announcements and trends\n- Evaluate the company's current trends and plan on changes to meet your needs and plan accordingly\n- Set a specific target for your next business investment.\n- Develop an ongoing plan that will guide you through your business transformation.\n- Establish a plan that will help you increase the company's performance, and improve its prospects for future success. \n- Analyze the company's current growth prospects and plan on changes to meet your needs and plan accordingly\n- Set a specific target for your next business investment\n✨ Advanced LLM analysis included\n- Analyze the following news headlines and descriptions:\n- Financial Markets: S&P 500 Index: \"The Dow Jones Industrial Average is back up to its pre-recession peak\" (Score: -1.638)\n- Markets & Markets: \"For the first time since the Great Depression, the U.S. government is offering a higher-than-expected rate of tax return of $7,350 for individuals, for tax purposes - a 1.5% increase in the value of the nation's tax code.\" (Score: -4.9)\n- Markets & Markets: \"The U.S. tax code is the most progressive in the developed world. The U.S. tax code provides an additional tax break for capital gains and dividends, and is also a tax break for small business owners who are not able to file their income tax returns in full.\" (Score: -2.93)\n- Markets & Markets: \"Expect the U.S.\n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: NEGATIVE (score: -0.33)\nAnalyzed 3 news article(s)\n\nKey Insights:\n  • Analyzed 3 articles with overall negative sentiment (score: -0.33)\n  • ⚠️ Negative sentiment detected - recommend further investigation\n  • Top trending keyword: 'technology' (mentioned 3 times)\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary: The primary business trend.\n- The most disruptive technology.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n\n⚠️  1 ALERT(S) TRIGGERED:\n  [HIGH] Significant negative sentiment detected (score: -0.33)\n\nRecommended Actions:\n  1. Monitor situation closely\n  2. Prepare contingency plans\n  3. Positive trends identified: growth\n  4. ✨ Strategic AI Advisory generated",
+  "priority": "high",
+  "decisions": {
+    "summary": "Decision: HIGH priority | 1 alert(s) triggered | 3 action(s) recommended | Sentiment: negative (-0.33)",
+    "detailed_decisions": {
+      "sentiment": {
+        "sentiment_score": -0.326,
+        "sentiment_label": "negative",
+        "confidence": 0.988,
+        "priority": "high",
+        "actions": [
+          "Monitor situation closely",
+          "Prepare contingency plans"
+        ],
+        "alerts": [
+          {
+            "type": "HIGH_NEGATIVE_SENTIMENT",
+            "message": "Significant negative sentiment detected (score: -0.33)",
+            "severity": "high"
+          }
+        ]
+      },
+      "keywords": {
+        "top_keywords": {
+          "technology": 3,
+          "taiwan": 2,
+          "richest": 2,
+          "wealth": 2,
+          "year": 2,
+          "seoige": 2,
+          "growth": 1,
+          "report": 1,
+          "says": 1,
+          "households": 1
+        },
+        "actions": [
+          "Positive trends identified: growth"
+        ],
+        "positive_keywords": [
+          "growth"
+        ]
+      }
+    },
+    "recommended_actions": [
+      "Monitor situation closely",
+      "Prepare contingency plans",
+      "Positive trends identified: growth",
+      "✨ Strategic AI Advisory generated"
+    ],
+    "alerts": [
+      {
+        "type": "HIGH_NEGATIVE_SENTIMENT",
+        "message": "Significant negative sentiment detected (score: -0.33)",
+        "severity": "high"
+      }
+    ]
+  },
+  "analysis": {
+    "sentiment": {
+      "news": {
+        "overall_sentiment": -0.326,
+        "sentiment_label": "negative",
+        "confidence": 0.988,
+        "article_sentiments": [
+          {
+            "title": "Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says",
+            "sentiment_score": 0.975,
+            "sentiment_label": "positive",
+            "confidence": 0.988
+          },
+          {
+            "title": "Gráinne Seoige: Sexualised deepfake images left me traumatised",
+            "sentiment_score": -0.99,
+            "sentiment_label": "negative",
+            "confidence": 0.995
+          },
+          {
+            "title": "5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com",
+            "sentiment_score": -0.962,
+            "sentiment_label": "negative",
+            "confidence": 0.981
+          }
+        ],
+        "total_articles": 3
+      }
+    },
+    "keywords": {
+      "news": {
+        "technology": 3,
+        "taiwan": 2,
+        "richest": 2,
+        "wealth": 2,
+        "year": 2,
+        "seoige": 2,
+        "growth": 1,
+        "report": 1,
+        "says": 1,
+        "households": 1
+      }
+    },
+    "statistics": {},
+    "insights": [
+      "Analyzed 3 articles with overall negative sentiment (score: -0.33)",
+      "⚠️ Negative sentiment detected - recommend further investigation",
+      "Top trending keyword: 'technology' (mentioned 3 times)",
+      "✨ Enhanced LLM analysis included"
+    ],
+    "enhanced_insights": "\n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Gráinne Seoige: Sexualised deepfake images left me traumatised: Gráinne Seoige is calling for action on the availability of nudification technology to be taken by regulators and the government.\n- 5 Legal Issues Likely to Arise Due to AI | NextBigFuture.com: Artificial intelligence is no longer the preserve of science fiction films and novels. The disruptive technology provides efficiency and innovation, but it\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary: The primary business trend.\n- The most disruptive technology.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\nThe most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\n- The most disruptive business.\nThe most disruptive business.\nThe most disruptive business."
+  },
+  "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: negative (Score: -0.326)\n        - Insights: Analyzed 3 articles with overall negative sentiment (score: -0.33)\n⚠️ Negative sentiment detected - recommend further investigation\nTop trending keyword: 'technology' (mentioned 3 times)\n✨ Enhanced LLM analysis included\n        - Weather: clear, 20°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - Taiwan’s Richest to See Wealth Growth of 10% a Year, Report Says: Taiwan’s richest households will see their wealth grow about 10% a year through 2029 as a global technology race lifts markets and stokes income for the island’s cutting-edge companies.\n- Gráinne Seoige: Sexualised deep\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n- Establish a strategy that will help you maximize your profits in the future.\n- Build on your operational experience, and improve by performing your own research\n- Understand the need to identify and remove any \"skeletons\" from your company.\n- Evaluate the company's potential future growth prospects and plan to use your expertise to achieve these objectives\n- Understand the need to keep the company in line with the needs of the global population, and to make sure it works for everyone in the future. \n- Make smart decisions about where to invest.\n- Analyze the business for potential weaknesses, and then use your knowledge to design and execute effective strategies to address these weaknesses\n- Plan and execute on your current plans\n- Understand and implement the company's most innovative technology offerings and products\n- Take a step back from a project and evaluate your needs and make choices based on their effectiveness\n- Plan and execute on their latest product announcements and trends\n- Evaluate the company's current trends and plan on changes to meet your needs and plan accordingly\n- Set a specific target for your next business investment.\n- Develop an ongoing plan that will guide you through your business transformation.\n- Establish a plan that will help you increase the company's performance, and improve its prospects for future success. \n- Analyze the company's current growth prospects and plan on changes to meet your needs and plan accordingly\n- Set a specific target for your next business investment\n✨ Advanced LLM analysis included\n- Analyze the following news headlines and descriptions:\n- Financial Markets: S&P 500 Index: \"The Dow Jones Industrial Average is back up to its pre-recession peak\" (Score: -1.638)\n- Markets & Markets: \"For the first time since the Great Depression, the U.S. government is offering a higher-than-expected rate of tax return of $7,350 for individuals, for tax purposes - a 1.5% increase in the value of the nation's tax code.\" (Score: -4.9)\n- Markets & Markets: \"The U.S. tax code is the most progressive in the developed world. The U.S. tax code provides an additional tax break for capital gains and dividends, and is also a tax break for small business owners who are not able to file their income tax returns in full.\" (Score: -2.93)\n- Markets & Markets: \"Expect the U.S."
+}

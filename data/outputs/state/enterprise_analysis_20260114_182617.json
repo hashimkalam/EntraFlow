@@ -1,0 +1,215 @@
+{
+  "workflow_name": "enterprise_analysis",
+  "workflow_id": "20260114_182617",
+  "timestamp": "2026-01-14T18:26:49.909635",
+  "state": {
+    "outputs": {
+      "location": "London",
+      "news_query": "AI technology",
+      "raw_data": {
+        "data": {
+          "weather": {
+            "location": "London",
+            "temperature": 15.5,
+            "description": "Partly cloudy",
+            "humidity": 65,
+            "wind_speed": 12.5,
+            "mock": true
+          },
+          "news": {
+            "query": "technology",
+            "articles": [],
+            "totalResults": 0,
+            "mock": false
+          }
+        },
+        "metadata": {
+          "fetch_time": "2026-01-14T18:26:17.561063",
+          "sources_requested": [
+            "weather",
+            "news"
+          ],
+          "sources_fetched": [
+            "weather",
+            "news"
+          ]
+        }
+      },
+      "analysis_results": {
+        "sentiment": {},
+        "keywords": {},
+        "statistics": {
+          "weather": {
+            "location": "London",
+            "temperature": 15.5,
+            "temperature_category": "mild",
+            "humidity": 65,
+            "wind_speed": 12.5,
+            "description": "Partly cloudy"
+          }
+        },
+        "insights": [
+          "Weather conditions: mild temperature"
+        ]
+      },
+      "decisions": {
+        "priority": "medium",
+        "actions": [
+          "Weather conditions normal - no special actions required",
+          "✨ Strategic AI Advisory generated"
+        ],
+        "alerts": [],
+        "decisions": {
+          "weather": {
+            "temperature_category": "mild",
+            "actions": [
+              "Weather conditions normal - no special actions required"
+            ]
+          }
+        },
+        "summary": "Decision: MEDIUM priority | 1 action(s) recommended",
+        "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: neutral (Score: 0)\n        - Insights: Weather conditions: mild temperature\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: No deep analysis available\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation:\n             \n\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "
+      },
+      "report": {
+        "report": {
+          "metadata": {
+            "generated_at": "2026-01-14T18:26:49.908621",
+            "report_type": "EntraFlow Enterprise Analysis Report",
+            "version": "1.0"
+          },
+          "executive_summary": "PRIORITY LEVEL: MEDIUM\n\nDecision: MEDIUM priority | 1 action(s) recommended\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: neutral (Score: 0)\n        - Insights: Weather conditions: mild temperature\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: No deep analysis available\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation:\n             \n\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n────────────────────────────────────────────────────────────────\n\nKey Insights:\n  • Weather conditions: mild temperature\n\nRecommended Actions:\n  1. Weather conditions normal - no special actions required\n  2. ✨ Strategic AI Advisory generated",
+          "priority": "medium",
+          "decisions": {
+            "summary": "Decision: MEDIUM priority | 1 action(s) recommended",
+            "detailed_decisions": {
+              "weather": {
+                "temperature_category": "mild",
+                "actions": [
+                  "Weather conditions normal - no special actions required"
+                ]
+              }
+            },
+            "recommended_actions": [
+              "Weather conditions normal - no special actions required",
+              "✨ Strategic AI Advisory generated"
+            ],
+            "alerts": []
+          },
+          "analysis": {
+            "sentiment": {},
+            "keywords": {},
+            "statistics": {
+              "weather": {
+                "location": "London",
+                "temperature": 15.5,
+                "temperature_category": "mild",
+                "humidity": 65,
+                "wind_speed": 12.5,
+                "description": "Partly cloudy"
+              }
+            },
+            "insights": [
+              "Weather conditions: mild temperature"
+            ],
+            "enhanced_insights": ""
+          },
+          "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: neutral (Score: 0)\n        - Insights: Weather conditions: mild temperature\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: No deep analysis available\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation:\n             \n\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "
+        },
+        "report_file": "data\\outputs\\report_20260114_182649.json",
+        "timestamp": "2026-01-14T18:26:49.909118",
+        "summary": "PRIORITY LEVEL: MEDIUM\n\nDecision: MEDIUM priority | 1 action(s) recommended\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: neutral (Score: 0)\n        - Insights: Weather conditions: mild temperature\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: No deep analysis available\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation:\n             \n\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n────────────────────────────────────────────────────────────────\n\nKey Insights:\n  • Weather conditions: mild temperature\n\nRecommended Actions:\n  1. Weather conditions normal - no special actions required\n  2. ✨ Strategic AI Advisory generated"
+      },
+      "validated_report": {
+        "validated_report": {
+          "report": {
+            "metadata": {
+              "generated_at": "2026-01-14T18:26:49.908621",
+              "report_type": "EntraFlow Enterprise Analysis Report",
+              "version": "1.0"
+            },
+            "executive_summary": "PRIORITY LEVEL: MEDIUM\n\nDecision: MEDIUM priority | 1 action(s) recommended\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: neutral (Score: 0)\n        - Insights: Weather conditions: mild temperature\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: No deep analysis available\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation:\n             \n\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n────────────────────────────────────────────────────────────────\n\nKey Insights:\n  • Weather conditions: mild temperature\n\nRecommended Actions:\n  1. Weather conditions normal - no special actions required\n  2. ✨ Strategic AI Advisory generated",
+            "priority": "medium",
+            "decisions": {
+              "summary": "Decision: MEDIUM priority | 1 action(s) recommended",
+              "detailed_decisions": {
+                "weather": {
+                  "temperature_category": "mild",
+                  "actions": [
+                    "Weather conditions normal - no special actions required"
+                  ]
+                }
+              },
+              "recommended_actions": [
+                "Weather conditions normal - no special actions required",
+                "✨ Strategic AI Advisory generated"
+              ],
+              "alerts": []
+            },
+            "analysis": {
+              "sentiment": {},
+              "keywords": {},
+              "statistics": {
+                "weather": {
+                  "location": "London",
+                  "temperature": 15.5,
+                  "temperature_category": "mild",
+                  "humidity": 65,
+                  "wind_speed": 12.5,
+                  "description": "Partly cloudy"
+                }
+              },
+              "insights": [
+                "Weather conditions: mild temperature"
+              ],
+              "enhanced_insights": ""
+            },
+            "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: neutral (Score: 0)\n        - Insights: Weather conditions: mild temperature\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: No deep analysis available\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation:\n             \n\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "
+          },
+          "report_file": "data\\outputs\\report_20260114_182649.json",
+          "timestamp": "2026-01-14T18:26:49.909118",
+          "summary": "PRIORITY LEVEL: MEDIUM\n\nDecision: MEDIUM priority | 1 action(s) recommended\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: neutral (Score: 0)\n        - Insights: Weather conditions: mild temperature\n        - Weather: Partly cloudy, 15.5°C\n        - Market Analysis: No deep analysis available\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation:\n             \n\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \n────────────────────────────────────────────────────────────────\n\nKey Insights:\n  • Weather conditions: mild temperature\n\nRecommended Actions:\n  1. Weather conditions normal - no special actions required\n  2. ✨ Strategic AI Advisory generated"
+        },
+        "validation_results": {
+          "completeness": {
+            "status": "complete"
+          },
+          "consistency": {
+            "priority": "consistent"
+          },
+          "critical_issues": [],
+          "warnings": [],
+          "quality_assurance": {
+            "checks_performed": [
+              "content_check",
+              "metadata_check",
+              "actionability_check",
+              "priority_check"
+            ],
+            "passed": true,
+            "issues": []
+          }
+        },
+        "conflicts_found": [],
+        "supervisor_notes": [
+          "✓ No critical issues found",
+          "✓ Quality assurance checks passed",
+          "✓ Workflow approved for delivery"
+        ],
+        "approval_status": "approved",
+        "supervisor_summary": "Approval Status: APPROVED\n\nSupervisor Notes:\n  • ✓ No critical issues found\n  • ✓ Quality assurance checks passed\n  • ✓ Workflow approved for delivery"
+      }
+    },
+    "status": "completed",
+    "completed_agents": [
+      "DataFetcher",
+      "Analyzer",
+      "DecisionMaker",
+      "Notifier",
+      "Supervisor"
+    ],
+    "failed_agents": [],
+    "start_time": "2026-01-14T18:26:17.559556",
+    "end_time": "2026-01-14T18:26:49.909635",
+    "execution_time": 32.35108137130737
+  }
+}

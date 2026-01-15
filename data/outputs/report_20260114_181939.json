@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-14T18:19:39.792340",
+    "report_type": "EntraFlow Enterprise Analysis Report",
+    "version": "1.0"
+  },
+  "executive_summary": "PRIORITY LEVEL: LOW\n\nDecision: LOW priority | 1 action(s) recommended | Sentiment: positive (1.00)\n\n────────────────────────────────────────────────────────────────\n✨ STRATEGIC AI ADVISORY\n────────────────────────────────────────────────────────────────\n\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: positive (Score: 0.997)\n        - Insights: Analyzed 1 articles with overall positive sentiment (score: 1.00)\n✓ Positive sentiment indicates favorable conditions\nTop trending keyword: 'finish' (mentioned 1 times)\n✨ Enhanced LLM analysis included\n        - Weather: clear, 20°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - ‘Finish it’: Inside killing of Iran nuke boss: The Mossad is legendary for its covert operations. In his memoir The Sword Of Freedom, its former chief YOSSI COHEN gives a glimpse into an extraordinary mission to assassinate a top Iranian nuclear s\n        \n        Provide a concise 3-\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n       \n          \n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \n────────────────────────────────────────────────────────────────\n\nSentiment Analysis: POSITIVE (score: 1.00)\nAnalyzed 1 news article(s)\n\nKey Insights:\n  • Analyzed 1 articles with overall positive sentiment (score: 1.00)\n  • ✓ Positive sentiment indicates favorable conditions\n  • Top trending keyword: 'finish' (mentioned 1 times)\n  • ✨ Enhanced LLM analysis included\n\nMarket Analysis (Deep Insights):\n  \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - ‘Finish it’: Inside killing of Iran nuke boss: The Mossad is legendary for its covert operations. In his memoir The Sword Of Freedom, its former chief YOSSI COHEN gives a glimpse into an extraordinary mission to assassinate a top Iranian nuclear s\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary: The Mossad is the world's most powerful covert spy, the most powerful power in the world and the world's most sophisticated enemy. It is the principal contractor for the most powerful covert agency. In his book The Sword Of Freedom, his former chief YOSSI COHEN is able to reveal how the Mossad helped the nuclear deal unravel and how it helped the country break.\nThe New York Times Bestseller, The Sword Of Freedom\nThe New York Times Bestseller, The Sword Of Freedom\nHow to Make an Enterprise Secure in the National Interest\n\"It was a time of great uncertainty, and there was little confidence in the government. There was little confidence in the intelligence community. And there was little confidence in the public. One of the best things that happened was that for the first time in the history of the United States, the American people began to listen to what was happening in the world... And the American people began to realize what happened to nuclear Iran... And that's what created the great fear in the world, the fear of the Iranian people, and the fear of the American people that this was going to happen. And so there was a great deal of uncertainty. The public did not know what was happening in the world. This was a time of great uncertainty. And there was little confidence in the government.\" – John S. Knight, Author A New Era of Foreign Intelligence\nThe New York Times Bestseller, The Sword Of Freedom\nThe New York Times Bestseller, The Sword Of Freedom\nThe New York Times Bestseller, The Sword Of Freedom\nHow to Make an Enterprise Secure in the National Interest\n\"It was a time of great uncertainty. There was little confidence in the government. There was little confidence in the intelligence community. And there was little confidence in the public.\" – John S. Knight, Author\nHow to Make an Enterprise Secure in the National Interest\n\"It was a time of great uncertainty. There was little confidence in the government. There was little confidence in the intelligence community. And there was little confidence in the public.\" – John S. Knight, Author\nHow to Make an Enterprise Secure in the National Interest\n\"It was a time of great uncertainty. There was little confidence in the government. There was little confidence in the intelligence community. And there was little confidence in the public.\" – John S. Knight, Author\n\nRecommended Actions:\n  1. Maintain current strategy\n  2. ✨ Strategic AI Advisory generated",
+  "priority": "low",
+  "decisions": {
+    "summary": "Decision: LOW priority | 1 action(s) recommended | Sentiment: positive (1.00)",
+    "detailed_decisions": {
+      "sentiment": {
+        "sentiment_score": 0.997,
+        "sentiment_label": "positive",
+        "confidence": 0.999,
+        "priority": "low",
+        "actions": [
+          "Maintain current strategy"
+        ],
+        "alerts": []
+      },
+      "keywords": {
+        "top_keywords": {
+          "finish": 1,
+          "inside": 1,
+          "killing": 1,
+          "iran": 1,
+          "nuke": 1,
+          "boss": 1,
+          "mossad": 1,
+          "legendary": 1,
+          "covert": 1,
+          "operations": 1
+        },
+        "actions": []
+      }
+    },
+    "recommended_actions": [
+      "Maintain current strategy",
+      "✨ Strategic AI Advisory generated"
+    ],
+    "alerts": []
+  },
+  "analysis": {
+    "sentiment": {
+      "news": {
+        "overall_sentiment": 0.997,
+        "sentiment_label": "positive",
+        "confidence": 0.999,
+        "article_sentiments": [
+          {
+            "title": "‘Finish it’: Inside killing of Iran nuke boss",
+            "sentiment_score": 0.997,
+            "sentiment_label": "positive",
+            "confidence": 0.999
+          }
+        ],
+        "total_articles": 1
+      }
+    },
+    "keywords": {
+      "news": {
+        "finish": 1,
+        "inside": 1,
+        "killing": 1,
+        "iran": 1,
+        "nuke": 1,
+        "boss": 1,
+        "mossad": 1,
+        "legendary": 1,
+        "covert": 1,
+        "operations": 1
+      }
+    },
+    "statistics": {},
+    "insights": [
+      "Analyzed 1 articles with overall positive sentiment (score: 1.00)",
+      "✓ Positive sentiment indicates favorable conditions",
+      "Top trending keyword: 'finish' (mentioned 1 times)",
+      "✨ Enhanced LLM analysis included"
+    ],
+    "enhanced_insights": "\n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - ‘Finish it’: Inside killing of Iran nuke boss: The Mossad is legendary for its covert operations. In his memoir The Sword Of Freedom, its former chief YOSSI COHEN gives a glimpse into an extraordinary mission to assassinate a top Iranian nuclear s\n        \n        Provide a concise 3-sentence summary that identifies:\n        1. The primary business trend.\n        2. Potential risks for an enterprise.\n        3. One strategic opportunity.\n        \n        Summary: The Mossad is the world's most powerful covert spy, the most powerful power in the world and the world's most sophisticated enemy. It is the principal contractor for the most powerful covert agency. In his book The Sword Of Freedom, his former chief YOSSI COHEN is able to reveal how the Mossad helped the nuclear deal unravel and how it helped the country break.\nThe New York Times Bestseller, The Sword Of Freedom\nThe New York Times Bestseller, The Sword Of Freedom\nHow to Make an Enterprise Secure in the National Interest\n\"It was a time of great uncertainty, and there was little confidence in the government. There was little confidence in the intelligence community. And there was little confidence in the public. One of the best things that happened was that for the first time in the history of the United States, the American people began to listen to what was happening in the world... And the American people began to realize what happened to nuclear Iran... And that's what created the great fear in the world, the fear of the Iranian people, and the fear of the American people that this was going to happen. And so there was a great deal of uncertainty. The public did not know what was happening in the world. This was a time of great uncertainty. And there was little confidence in the government.\" – John S. Knight, Author A New Era of Foreign Intelligence\nThe New York Times Bestseller, The Sword Of Freedom\nThe New York Times Bestseller, The Sword Of Freedom\nThe New York Times Bestseller, The Sword Of Freedom\nHow to Make an Enterprise Secure in the National Interest\n\"It was a time of great uncertainty. There was little confidence in the government. There was little confidence in the intelligence community. And there was little confidence in the public.\" – John S. Knight, Author\nHow to Make an Enterprise Secure in the National Interest\n\"It was a time of great uncertainty. There was little confidence in the government. There was little confidence in the intelligence community. And there was little confidence in the public.\" – John S. Knight, Author\nHow to Make an Enterprise Secure in the National Interest\n\"It was a time of great uncertainty. There was little confidence in the government. There was little confidence in the intelligence community. And there was little confidence in the public.\" – John S. Knight, Author"
+  },
+  "strategic_advisory": "\n        System: You are an Executive Risk & Strategy Advisor.\n        \n        Data:\n        - Sentiment: positive (Score: 0.997)\n        - Insights: Analyzed 1 articles with overall positive sentiment (score: 1.00)\n✓ Positive sentiment indicates favorable conditions\nTop trending keyword: 'finish' (mentioned 1 times)\n✨ Enhanced LLM analysis included\n        - Weather: clear, 20°C\n        - Market Analysis: \n        You are a business intelligence analyst. Analyze the following news headlines and descriptions:\n        - ‘Finish it’: Inside killing of Iran nuke boss: The Mossad is legendary for its covert operations. In his memoir The Sword Of Freedom, its former chief YOSSI COHEN gives a glimpse into an extraordinary mission to assassinate a top Iranian nuclear s\n        \n        Provide a concise 3-\n        \n        Task: \n        Provide a final, authoritative strategic recommendation for the CEO. \n        Focus on whether to Proceed, Pivot, or Pause operations in this location.\n        Keep it under 100 words.\n        \n        Recommendation: \n       \n          \n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "
+}

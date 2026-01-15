@@ -12,6 +12,8 @@
 
 EntraFlow coordinates a suite of specialized agents through a central Orchestrator. Each agent is responsible for a specific domain—from data ingestion and machine learning analysis to strategic decision-making and quality assurance.
 
+![High-Level Architecture](High-Level-Architecture.png)
+
 ### The Agent Ecosystem
 - **📡 DataFetcher**: Ingests real-time data from external APIs (OpenWeather, NewsAPI). Features robust caching and mock data fallbacks for development.
 - **🔍 Analyzer**: Conducts multi-layer analysis using **Transformer models** (DistilBERT) for sentiment analysis and **LangChain-powered LLMs** for deep semantic insights.
